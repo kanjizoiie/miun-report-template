@@ -1,0 +1,1018 @@
+
+@article{chow_lyapunov-based_nodate,
+	title = {A Lyapunov-based Approach to Safe Reinforcement Learning},
+	abstract = {In many real-world reinforcement learning ({RL}) problems, besides optimizing the main objective function, an agent must concurrently avoid violating a number of constraints. In particular, besides optimizing performance, it is crucial to guarantee the safety of an agent during training as well as deployment (e.g., a robot should avoid taking actions - exploratory or not - which irrevocably harm its hardware). To incorporate safety in {RL}, we derive algorithms under the framework of constrained Markov decision processes ({CMDPs}), an extension of the standard Markov decision processes ({MDPs}) augmented with constraints on expected cumulative costs. Our approach hinges on a novel Lyapunov method. We deﬁne and present a method for constructing Lyapunov functions, which provide an effective way to guarantee the global safety of a behavior policy during training via a set of local linear constraints. Leveraging these theoretical underpinnings, we show how to use the Lyapunov approach to systematically transform dynamic programming ({DP}) and {RL} algorithms into their safe counterparts. To illustrate their effectiveness, we evaluate these algorithms in several {CMDP} planning and decision-making tasks on a safety benchmark domain. Our results show that our proposed method signiﬁcantly outperforms existing baselines in balancing constraint satisfaction and performance.},
+	pages = {10},
+	author = {Chow, Yinlam and Nachum, Ofir and Duenez-Guzman, Edgar and Ghavamzadeh, Mohammad},
+	langid = {english},
+	file = {Chow m. fl. - A Lyapunov-based Approach to Safe Reinforcement Le.pdf:/home/marcus/Zotero/storage/UM9IEA9P/Chow m. fl. - A Lyapunov-based Approach to Safe Reinforcement Le.pdf:application/pdf}
+}
+
+@article{berkenkamp_safe_nodate,
+	title = {Safe Model-based Reinforcement Learning with Stability Guarantees},
+	abstract = {Reinforcement learning is a powerful paradigm for learning optimal policies from experimental data. However, to ﬁnd optimal policies, most reinforcement learning algorithms explore all possible actions, which may be harmful for real-world systems. As a consequence, learning algorithms are rarely applied on safety-critical systems in the real world. In this paper, we present a learning algorithm that explicitly considers safety, deﬁned in terms of stability guarantees. Speciﬁcally, we extend control-theoretic results on Lyapunov stability veriﬁcation and show how to use statistical models of the dynamics to obtain high-performance control policies with provable stability certiﬁcates. Moreover, under additional regularity assumptions in terms of a Gaussian process prior, we prove that one can effectively and safely collect data in order to learn about the dynamics and thus both improve control performance and expand the safe region of the state space. In our experiments, we show how the resulting algorithm can safely optimize a neural network policy on a simulated inverted pendulum, without the pendulum ever falling down.},
+	pages = {11},
+	author = {Berkenkamp, Felix and Schoellig, Angela P and Turchetta, Matteo and Krause, Andreas},
+	langid = {english},
+	file = {Berkenkamp m. fl. - Safe Model-based Reinforcement Learning with Stabi.pdf:/home/marcus/Zotero/storage/2DXI6UJC/Berkenkamp m. fl. - Safe Model-based Reinforcement Learning with Stabi.pdf:application/pdf}
+}
+
+@article{salimans_evolution_2017,
+	title = {Evolution Strategies as a Scalable Alternative to Reinforcement Learning},
+	url = {http://arxiv.org/abs/1703.03864},
+	abstract = {We explore the use of Evolution Strategies ({ES}), a class of black box optimization algorithms, as an alternative to popular {MDP}-based {RL} techniques such as Qlearning and Policy Gradients. Experiments on {MuJoCo} and Atari show that {ES} is a viable solution strategy that scales extremely well with the number of {CPUs} available: By using a novel communication strategy based on common random numbers, our {ES} implementation only needs to communicate scalars, making it possible to scale to over a thousand parallel workers. This allows us to solve 3D humanoid walking in 10 minutes and obtain competitive results on most Atari games after one hour of training. In addition, we highlight several advantages of {ES} as a black box optimization technique: it is invariant to action frequency and delayed rewards, tolerant of extremely long horizons, and does not need temporal discounting or value function approximation.},
+	journaltitle = {{arXiv}:1703.03864 [cs, stat]},
+	author = {Salimans, Tim and Ho, Jonathan and Chen, Xi and Sidor, Szymon and Sutskever, Ilya},
+	urldate = {2020-02-04},
+	date = {2017-09-07},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1703.03864},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing, Statistics - Machine Learning},
+	file = {Salimans m. fl. - 2017 - Evolution Strategies as a Scalable Alternative to .pdf:/home/marcus/Zotero/storage/5BAIJY8G/Salimans m. fl. - 2017 - Evolution Strategies as a Scalable Alternative to .pdf:application/pdf}
+}
+
+@article{munos_safe_2016,
+	title = {Safe and Efficient Off-Policy Reinforcement Learning},
+	url = {http://arxiv.org/abs/1606.02647},
+	abstract = {In this work, we take a fresh look at some old and new algorithms for off-policy, return-based reinforcement learning. Expressing these in a common form, we derive a novel algorithm, Retrace(λ), with three desired properties: (1) it has low variance; (2) it safely uses samples collected from any behaviour policy, whatever its degree of “off-policyness”; and (3) it is efﬁcient as it makes the best use of samples collected from near on-policy behaviour policies. We analyze the contractive nature of the related operator under both off-policy policy evaluation and control settings and derive online sample-based algorithms. We believe this is the ﬁrst return-based off-policy control algorithm converging a.s. to Q∗ without the {GLIE} assumption (Greedy in the Limit with Inﬁnite Exploration). As a corollary, we prove the convergence of Watkins’ Q(λ), which was an open problem since 1989. We illustrate the beneﬁts of Retrace(λ) on a standard suite of Atari 2600 games.},
+	journaltitle = {{arXiv}:1606.02647 [cs, stat]},
+	author = {Munos, Rémi and Stepleton, Tom and Harutyunyan, Anna and Bellemare, Marc G.},
+	urldate = {2020-02-04},
+	date = {2016-11-07},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1606.02647},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Munos m. fl. - 2016 - Safe and Efficient Off-Policy Reinforcement Learni.pdf:/home/marcus/Zotero/storage/RHLFU74R/Munos m. fl. - 2016 - Safe and Efficient Off-Policy Reinforcement Learni.pdf:application/pdf}
+}
+
+@article{sorokin_deep_2015,
+	title = {Deep Attention Recurrent Q-Network},
+	url = {http://arxiv.org/abs/1512.01693},
+	abstract = {A deep learning approach to reinforcement learning led to a general learner able to train on visual input to play a variety of arcade games at the human and superhuman levels. Its creators at the Google {DeepMind}’s team called the approach: Deep Q-Network ({DQN}). We present an extension of {DQN} by “soft” and “hard” attention mechanisms. Tests of the proposed Deep Attention Recurrent Q-Network ({DARQN}) algorithm on multiple Atari 2600 games show level of performance superior to that of {DQN}. Moreover, built-in attention mechanisms allow a direct online monitoring of the training process by highlighting the regions of the game screen the agent is focusing on when making decisions.},
+	journaltitle = {{arXiv}:1512.01693 [cs]},
+	author = {Sorokin, Ivan and Seleznev, Alexey and Pavlov, Mikhail and Fedorov, Aleksandr and Ignateva, Anastasiia},
+	urldate = {2020-02-04},
+	date = {2015-12-05},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1512.01693},
+	keywords = {Computer Science - Machine Learning},
+	file = {Sorokin m. fl. - 2015 - Deep Attention Recurrent Q-Network.pdf:/home/marcus/Zotero/storage/ZBQZSX4A/Sorokin m. fl. - 2015 - Deep Attention Recurrent Q-Network.pdf:application/pdf}
+}
+
+@article{garcia-martin_estimation_2019,
+	title = {Estimation of energy consumption in machine learning},
+	volume = {134},
+	issn = {07437315},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0743731518308773},
+	doi = {10.1016/j.jpdc.2019.07.007},
+	abstract = {Energy consumption has been widely studied in the computer architecture field for decades. While the adoption of energy as a metric in machine learning is emerging, the majority of research is still primarily focused on obtaining high levels of accuracy without any computational constraint. We believe that one of the reasons for this lack of interest is due to their lack of familiarity with approaches to evaluate energy consumption. To address this challenge, we present a review of the different approaches to estimate energy consumption in general and machine learning applications in particular. Our goal is to provide useful guidelines to the machine learning community giving them the fundamental knowledge to use and build specific energy estimation methods for machine learning algorithms. We also present the latest software tools that give energy estimation values, together with two use cases that enhance the study of energy consumption in machine learning.},
+	pages = {75--88},
+	journaltitle = {Journal of Parallel and Distributed Computing},
+	shortjournal = {Journal of Parallel and Distributed Computing},
+	author = {García-Martín, Eva and Rodrigues, Crefeda Faviola and Riley, Graham and Grahn, Håkan},
+	urldate = {2020-02-04},
+	date = {2019-12},
+	langid = {english},
+	file = {García-Martín m. fl. - 2019 - Estimation of energy consumption in machine learni.pdf:/home/marcus/Zotero/storage/TML5A23A/García-Martín m. fl. - 2019 - Estimation of energy consumption in machine learni.pdf:application/pdf}
+}
+
+@article{garcia_comprehensive_nodate,
+	title = {A Comprehensive Survey on Safe Reinforcement Learning},
+	abstract = {Safe Reinforcement Learning can be deﬁned as the process of learning policies that maximize the expectation of the return in problems in which it is important to ensure reasonable system performance and/or respect safety constraints during the learning and/or deployment processes. We categorize and analyze two approaches of Safe Reinforcement Learning. The ﬁrst is based on the modiﬁcation of the optimality criterion, the classic discounted ﬁnite/inﬁnite horizon, with a safety factor. The second is based on the modiﬁcation of the exploration process through the incorporation of external knowledge or the guidance of a risk metric. We use the proposed classiﬁcation to survey the existing literature, as well as suggesting future directions for Safe Reinforcement Learning.},
+	pages = {44},
+	author = {Garcıa, Javier and Fernandez, Fernando},
+	langid = {english},
+	file = {Garcıa och Fernandez - A Comprehensive Survey on Safe Reinforcement Learn.pdf:/home/marcus/Zotero/storage/RD7KLFJ3/Garcıa och Fernandez - A Comprehensive Survey on Safe Reinforcement Learn.pdf:application/pdf}
+}
+
+@article{cheong_scarl_2019,
+	title = {{SCARL}: Attentive Reinforcement Learning-Based Scheduling in a Multi-Resource Heterogeneous Cluster},
+	volume = {7},
+	issn = {2169-3536},
+	url = {https://ieeexplore.ieee.org/document/8876692/},
+	doi = {10.1109/ACCESS.2019.2948150},
+	shorttitle = {{SCARL}},
+	abstract = {Advanced reinforcement learning ({RL}) technologies have recently increased the opportunity for automating several tasks in cluster management at scale by exploiting repetitive logs of cluster operation and building a learning model for resource allocation and job scheduling. Yet, this trend of adopting {RL} in the domain of cluster management has not fully addressed the diversity and heterogeneity of jobs and machines in modern cluster environments. In this paper, we present an {RL}-based scheduler for a multi-resource cluster, namely {SCARL} ({SCheduler} with Attentive Reinforcement Learning), concentrating on intricate cluster operating conditions with different resource requirements and capabilities. Speciﬁcally, we employ attentive embedding and factored-action scheduling that together efﬁciently incorporate time-varying interdependency of jobs and machines in {RL} processing; they enable an end-to-end scalable policy for scheduling diverse jobs on heterogeneous machines. To the best of our knowledge, we are the ﬁrst to employ attention mechanism in {RL}-based cluster resource management. Through experiments, we demonstrate that our approach is competitive with existing heuristic methods under various cluster simulation conﬁgurations, e.g., an average 9.2 \% enhancement in slowdown over the shortest job ﬁrst algorithm. Additionally, the approach yields stable performance with our test cluster for running synthetic workloads based on real traces.},
+	pages = {153432--153444},
+	journaltitle = {{IEEE} Access},
+	shortjournal = {{IEEE} Access},
+	author = {Cheong, Mukoe and Lee, Hyunsung and Yeom, Ikjun and Woo, Honguk},
+	urldate = {2020-02-04},
+	date = {2019},
+	langid = {english},
+	file = {Cheong m. fl. - 2019 - SCARL Attentive Reinforcement Learning-Based Sche.pdf:/home/marcus/Zotero/storage/2SVHAICR/Cheong m. fl. - 2019 - SCARL Attentive Reinforcement Learning-Based Sche.pdf:application/pdf}
+}
+
+@article{mnih_playing_nodate,
+	title = {Playing Atari with Deep Reinforcement Learning},
+	abstract = {We present the ﬁrst deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The model is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards. We apply our method to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. We ﬁnd that it outperforms all previous approaches on six of the games and surpasses a human expert on three of them.},
+	pages = {9},
+	author = {Mnih, Volodymyr and Kavukcuoglu, Koray and Silver, David and Graves, Alex and Antonoglou, Ioannis and Wierstra, Daan and Riedmiller, Martin},
+	langid = {english},
+	file = {Mnih m. fl. - Playing Atari with Deep Reinforcement Learning.pdf:/home/marcus/Zotero/storage/U7XULFQT/Mnih m. fl. - Playing Atari with Deep Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{tan_multi-agent_nodate,
+	title = {Multi-Agent Learning: Independent vs. Cooperative Agents},
+	abstract = {Intelligent human agents exist in a cooperative social environment that facilitates learning. They learn not only by trialand-error, but also through cooperation by sharing instantaneous information, episodic experience, and learned knowledge. The key investigations of this paper are, {\textbackslash}Given the same number of reinforcement learning agents, will cooperative agents outperform independent agents who do not communicate during learning?" and {\textbackslash}What is the price for such cooperation?" Using independent agents as a benchmark, cooperative agents are studied in following ways: (1) sharing sensation, (2) sharing episodes, and (3) sharing learned policies. This paper shows that (a) additional sensation from another agent is bene cial if it can be used e ciently, (b) sharing learned policies or episodes among agents speeds up learning at the cost of communication, and (c) for joint tasks, agents engaging in partnership can signi cantly outperform independent agents although they may learn slowly in the beginning. These tradeo s are not just limited to multi-agent reinforcement learning.},
+	pages = {8},
+	author = {Tan, Ming},
+	langid = {english},
+	file = {Tan - MInudletip-AengdeennttRvesi.nCfoorocpemereantitvLe.pdf:/home/marcus/Zotero/storage/VUXGEDG7/Tan - MInudletip-AengdeennttRvesi.nCfoorocpemereantitvLe.pdf:application/pdf}
+}
+
+@article{pack_kaelbling_reinforcement_nodate,
+	title = {Reinforcement Learning: A Survey},
+	abstract = {This paper surveys the  eld of reinforcement learning from a computer-science per-
+spective. It is written to be accessible to researchers familiar with machine learning. Both
+the historical basis of the  eld and a broad selection of current work are summarized.
+Reinforcement learning is the problem faced by an agent that learns behavior through
+trial-and-error interactions with a dynamic environment. The work described here has a
+resemblance to work in psychology, but di ers considerably in the details and in the use
+of the word {\textbackslash}reinforcement." The paper discusses central issues of reinforcement learning,
+including trading o  exploration and exploitation, establishing the foundations of the  eld
+via Markov decision theory, learning from delayed reinforcement, constructing empirical
+models to accelerate learning, making use of generalization and hierarchy, and coping with
+hidden state. It concludes with a survey of some implemented systems and an assessment
+of the practical utility of current methods for reinforcement learning.},
+	author = {Pack Kaelbling, Leslie and L. Littman, Michael and W. Moore, Andrew},
+	file = {10166-Article Text-18539-1-10-20180216.pdf:/home/marcus/Zotero/storage/4AVS56MX/10166-Article Text-18539-1-10-20180216.pdf:application/pdf}
+}
+
+@online{european_commission_pdfpdf_nodate,
+	title = {{PDF}.pdf},
+	url = {https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52018DC0283&from=EN},
+	author = {European Commission},
+	urldate = {2020-02-04},
+	file = {PDF.pdf:/home/marcus/Zotero/storage/KCQNZ6J6/PDF.pdf:application/pdf}
+}
+
+@article{thrun_e_nodate,
+	title = {E cient Exploration In Reinforcement Learning},
+	abstract = {Exploration plays a fundamental role in any active learning system. This study evaluates the role of exploration in active learning and describes several local techniques for exploration in nite, discrete domains, embedded in a reinforcement learning framework  delayed reinforcement .},
+	pages = {44},
+	author = {Thrun, Sebastian B},
+	langid = {english},
+	file = {Thrun - E cient Exploration In Reinforcement Learning.pdf:/home/marcus/Zotero/storage/T2TJ38Z2/Thrun - E cient Exploration In Reinforcement Learning.pdf:application/pdf;Thrun - E cient Exploration In Reinforcement Learning.pdf:/home/marcus/Zotero/storage/EXU4ZYXG/Thrun - E cient Exploration In Reinforcement Learning.pdf:application/pdf;Thrun - E cient Exploration In Reinforcement Learning.pdf:/home/marcus/Zotero/storage/7UPAIG5X/Thrun - E cient Exploration In Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{busoniu_comprehensive_2008,
+	title = {A Comprehensive Survey of Multiagent Reinforcement Learning},
+	volume = {38},
+	issn = {1094-6977, 1558-2442},
+	url = {https://ieeexplore.ieee.org/document/4445757/},
+	doi = {10.1109/TSMCC.2007.913919},
+	abstract = {Multi-agent systems are rapidly ﬁnding applications in a variety of domains, including robotics, distributed control, telecommunications, and economics. The complexity of many tasks arising in these domains makes them difﬁcult to solve with preprogrammed agent behaviors. The agents must instead discover a solution on their own, using learning. A signiﬁcant part of the research on multi-agent learning concerns reinforcement learning techniques. This paper provides a comprehensive survey of multi-agent reinforcement learning ({MARL}). A central issue in the ﬁeld is the formal statement of the multi-agent learning goal. Different viewpoints on this issue have led to the proposal of many different goals, among which two focal points can be distinguished: stability of the agents’ learning dynamics, and adaptation to the changing behavior of the other agents. The {MARL} algorithms described in the literature aim—either explicitly or implicitly—at one of these two goals or at a combination of both, in a fully cooperative, fully competitive, or more general setting. A representative selection of these algorithms is discussed in detail in this paper, together with the speciﬁc issues that arise in each category. Additionally, the beneﬁts and challenges of {MARL} are described along with some of the problem domains where {MARL} techniques have been applied. Finally, an outlook for the ﬁeld is provided.},
+	pages = {156--172},
+	number = {2},
+	journaltitle = {{IEEE} Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+	shortjournal = {{IEEE} Trans. Syst., Man, Cybern. C},
+	author = {Busoniu, Lucian and Babuska, Robert and De Schutter, Bart},
+	urldate = {2020-02-04},
+	date = {2008-03},
+	langid = {english},
+	file = {Busoniu m. fl. - 2008 - A Comprehensive Survey of Multiagent Reinforcement.pdf:/home/marcus/Zotero/storage/PCTS9HDJ/Busoniu m. fl. - 2008 - A Comprehensive Survey of Multiagent Reinforcement.pdf:application/pdf;Busoniu et al. - 2008 - A Comprehensive Survey of Multiagent Reinforcement.pdf:/home/marcus/Zotero/storage/XUBPQGNN/Busoniu et al. - 2008 - A Comprehensive Survey of Multiagent Reinforcement.pdf:application/pdf;Busoniu et al. - 2008 - A Comprehensive Survey of Multiagent Reinforcement.pdf:/home/marcus/Zotero/storage/YX4ABWDD/Busoniu et al. - 2008 - A Comprehensive Survey of Multiagent Reinforcement.pdf:application/pdf}
+}
+
+@article{galias_simulation-based_nodate,
+	title = {Simulation-based reinforcement learning for autonomous driving},
+	abstract = {We use synthetic data and a reinforcement learning algorithm to train a driving policy intended to control steering of a full-size real-world vehicle in a number of restricted driving scenarios. The driving policy uses {RGB} images as input.},
+	pages = {10},
+	author = {Galias, Christopher and Jakubowski, Adam and Michalewski, Henryk and Osinski, Błazej and Ziecina, Paweł},
+	langid = {english},
+	file = {Galias m. fl. - Simulation-based reinforcement learning for autono.pdf:/home/marcus/Zotero/storage/N8UXG6C7/Galias m. fl. - Simulation-based reinforcement learning for autono.pdf:application/pdf;Galias et al. - Simulation-based reinforcement learning for autono.pdf:/home/marcus/Zotero/storage/XJTUYRB8/Galias et al. - Simulation-based reinforcement learning for autono.pdf:application/pdf;Galias et al. - Simulation-based reinforcement learning for autono.pdf:/home/marcus/Zotero/storage/Q5SSKTXS/Galias et al. - Simulation-based reinforcement learning for autono.pdf:application/pdf}
+}
+
+@book{sutton_reinforcement_2018,
+	location = {Cambridge, Massachusetts},
+	edition = {Second edition},
+	title = {Reinforcement learning: an introduction},
+	isbn = {978-0-262-03924-6},
+	series = {Adaptive computation and machine learning series},
+	shorttitle = {Reinforcement learning},
+	abstract = {"Reinforcement learning, one of the most active research areas in artificial intelligence, is a computational approach to learning whereby an agent tries to maximize the total amount of reward it receives while interacting with a complex, uncertain environment. In Reinforcement Learning, Richard Sutton and Andrew Barto provide a clear and simple account of the field's key ideas and algorithms."--},
+	pagetotal = {526},
+	publisher = {The {MIT} Press},
+	author = {Sutton, Richard S. and Barto, Andrew G.},
+	date = {2018},
+	langid = {english},
+	keywords = {Reinforcement learning},
+	file = {Sutton och Barto - 2018 - Reinforcement learning an introduction.pdf:/home/marcus/Zotero/storage/PKNJ2QMR/Sutton och Barto - 2018 - Reinforcement learning an introduction.pdf:application/pdf;Sutton and Barto - 2018 - Reinforcement learning an introduction.pdf:/home/marcus/Zotero/storage/VMXKRMUH/Sutton and Barto - 2018 - Reinforcement learning an introduction.pdf:application/pdf}
+}
+
+@article{dayan_reward_2002,
+	title = {Reward, Motivation, and Reinforcement Learning},
+	volume = {36},
+	issn = {08966273},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0896627302009637},
+	doi = {10.1016/S0896-6273(02)00963-7},
+	pages = {285--298},
+	number = {2},
+	journaltitle = {Neuron},
+	shortjournal = {Neuron},
+	author = {Dayan, Peter and Balleine, Bernard W.},
+	urldate = {2020-02-04},
+	date = {2002-10},
+	langid = {english},
+	file = {Dayan och Balleine - 2002 - Reward, Motivation, and Reinforcement Learning.pdf:/home/marcus/Zotero/storage/XN4CWCPN/Dayan och Balleine - 2002 - Reward, Motivation, and Reinforcement Learning.pdf:application/pdf;Dayan and Balleine - 2002 - Reward, Motivation, and Reinforcement Learning.pdf:/home/marcus/Zotero/storage/LGPE3MAL/Dayan and Balleine - 2002 - Reward, Motivation, and Reinforcement Learning.pdf:application/pdf;Dayan and Balleine - 2002 - Reward, Motivation, and Reinforcement Learning.pdf:/home/marcus/Zotero/storage/ANNEDEHT/Dayan and Balleine - 2002 - Reward, Motivation, and Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{littman_reinforcement_2015,
+	title = {Reinforcement learning improves behaviour from evaluative feedback},
+	volume = {521},
+	issn = {0028-0836, 1476-4687},
+	url = {http://www.nature.com/articles/nature14540},
+	doi = {10.1038/nature14540},
+	pages = {445--451},
+	number = {7553},
+	journaltitle = {Nature},
+	shortjournal = {Nature},
+	author = {Littman, Michael L.},
+	urldate = {2020-02-04},
+	date = {2015-05},
+	langid = {english},
+	file = {Littman - 2015 - Reinforcement learning improves behaviour from eva.pdf:/home/marcus/Zotero/storage/3UIRHDBK/Littman - 2015 - Reinforcement learning improves behaviour from eva.pdf:application/pdf;Littman - 2015 - Reinforcement learning improves behaviour from eva.pdf:/home/marcus/Zotero/storage/ZTTSDA7B/Littman - 2015 - Reinforcement learning improves behaviour from eva.pdf:application/pdf;Littman - 2015 - Reinforcement learning improves behaviour from eva.pdf:/home/marcus/Zotero/storage/MMSMK4DU/Littman - 2015 - Reinforcement learning improves behaviour from eva.pdf:application/pdf}
+}
+
+@article{lin_self-improving_nodate,
+	title = {Self-improving reactive agents based on reinforcement learning, planning and teaching},
+	abstract = {To date, reinforcement learning has mostly been studied solving simple learning tasks. Reinforcement learning methods that have been studied so far typically converge slowly. The purpose of this work is thus twofold: 1) to investigate the utility of reinforcement learning in solving much more complicated learning tasks than previously studied, and 2) to investigate methods that will speed up reinforcement learning.},
+	pages = {29},
+	author = {Lin, Long-Ji},
+	langid = {english},
+	file = {Lin - Self-improving reactive agents based on reinforcem.pdf:/home/marcus/Zotero/storage/6MAS6W3N/Lin - Self-improving reactive agents based on reinforcem.pdf:application/pdf;Lin - Self-improving reactive agents based on reinforcem.pdf:/home/marcus/Zotero/storage/5HH79PWX/Lin - Self-improving reactive agents based on reinforcem.pdf:application/pdf;Lin - Self-improving reactive agents based on reinforcem.pdf:/home/marcus/Zotero/storage/VXRN5X6K/Lin - Self-improving reactive agents based on reinforcem.pdf:application/pdf}
+}
+
+@article{reddy_autonomous_nodate,
+	title = {{AUTONOMOUS} {CAR} : {DEPLOYMENT} {OF} {REINFORCEMENT} {LEARNING} {IN} {VARIOUS} {AUTONOMOUS} {DRIVING} {APPLICATIONS}},
+	abstract = {Reinforcement Learning is a type of Machine Learning which allows machines and software agents to automatically determine the ideal behavior in order to maximize their performance. The possible applications of Reinforcement Learning are many and in particular ranges from controlling vehicle to find the most efficient motor combination, to autonomous car navigation where collision avoidance behavior can be learnt by negative feedback from bumping into obstacles. For a vehicle to operate autonomously several real-time systems must work together and these include environment mapping and understanding, localization, route planning and movement control. An overview of different reinforcement learning applications in Autonomous Driving systems is presented. The deep reinforcement learning in single agent setting using convolutional neural networks with Q-Learning and how the single-agent model can be used to produce the specific driving behaviour of an autonomous car on a highway is applied. For this, autonomous cars are considered as agents learning to drive safely and a traffic simulator is created – including fixed agents and human drivers –that serves as the learning environment. Finally, results show that the model using neural networks in a single-agent setting perform well when the traffic density is lower.},
+	pages = {18},
+	author = {Reddy, Poondru Prithvinath},
+	langid = {english},
+	file = {Reddy - AUTONOMOUS CAR  DEPLOYMENT OF REINFORCEMENT LEARN.pdf:/home/marcus/Zotero/storage/9W4RRHKI/Reddy - AUTONOMOUS CAR  DEPLOYMENT OF REINFORCEMENT LEARN.pdf:application/pdf;Reddy - AUTONOMOUS CAR  DEPLOYMENT OF REINFORCEMENT LEARN.pdf:/home/marcus/Zotero/storage/798CAS8W/Reddy - AUTONOMOUS CAR  DEPLOYMENT OF REINFORCEMENT LEARN.pdf:application/pdf}
+}
+
+@article{duan_benchmarking_nodate,
+	title = {Benchmarking Deep Reinforcement Learning for Continuous Control},
+	abstract = {Recently, researchers have made signiﬁcant progress combining the advances in deep learning for learning feature representations with reinforcement learning. Some notable examples include training agents to play Atari games based on raw pixel data and to acquire advanced manipulation skills using raw sensory inputs. However, it has been difﬁcult to quantify progress in the domain of continuous control due to the lack of a commonly adopted benchmark. In this work, we present a benchmark suite of continuous control tasks, including classic tasks like cart-pole swing-up, tasks with very high state and action dimensionality such as 3D humanoid locomotion, tasks with partial observations, and tasks with hierarchical structure. We report novel ﬁndings based on the systematic evaluation of a range of implemented reinforcement learning algorithms. Both the benchmark and reference implementations are released at https://github.com/ rllab/rllab in order to facilitate experimental reproducibility and to encourage adoption by other researchers.},
+	pages = {10},
+	author = {Duan, Yan and Chen, Xi and Houthooft, Rein and Schulman, John and Abbeel, Pieter},
+	langid = {english},
+	file = {Duan m. fl. - Benchmarking Deep Reinforcement Learning for Conti.pdf:/home/marcus/Zotero/storage/7JE8DGS7/Duan m. fl. - Benchmarking Deep Reinforcement Learning for Conti.pdf:application/pdf;Duan et al. - Benchmarking Deep Reinforcement Learning for Conti.pdf:/home/marcus/Zotero/storage/2E64FE8D/Duan et al. - Benchmarking Deep Reinforcement Learning for Conti.pdf:application/pdf;Duan et al. - Benchmarking Deep Reinforcement Learning for Conti.pdf:/home/marcus/Zotero/storage/T54KPHVB/Duan et al. - Benchmarking Deep Reinforcement Learning for Conti.pdf:application/pdf}
+}
+
+@article{mannucci_safe_2018,
+	title = {Safe Exploration Algorithms for Reinforcement Learning Controllers},
+	volume = {29},
+	issn = {2162-237X, 2162-2388},
+	url = {http://ieeexplore.ieee.org/document/7842559/},
+	doi = {10.1109/TNNLS.2017.2654539},
+	abstract = {Self-learning approaches, such as reinforcement learning, offer new possibilities for autonomous control of uncertain or time-varying systems. However, exploring an unknown environment under limited prediction capabilities is a challenge for a learning agent. If the environment is dangerous, free exploration can result in physical damage or in an otherwise unacceptable behavior. With respect to existing methods, the main contribution of this paper is the deﬁnition of a new approach that does not require global safety functions, nor speciﬁc formulations of the dynamics or of the environment, but relies on interval estimation of the dynamics of the agent during the exploration phase, assuming a limited capability of the agent to perceive the presence of incoming fatal states. Two algorithms are presented with this approach. The ﬁrst is the Safety Handling Exploration with Risk Perception Algorithm ({SHERPA}), which provides safety by individuating temporary safety functions, called backups. {SHERPA} is shown in a simulated, simpliﬁed quadrotor task, for which dangerous states are avoided. The second algorithm, denominated {OptiSHERPA}, can safely handle more dynamically complex systems for which {SHERPA} is not sufﬁcient through the use of safety metrics. An application of {OptiSHERPA} is simulated on an aircraft altitude control task.},
+	pages = {1069--1081},
+	number = {4},
+	journaltitle = {{IEEE} Transactions on Neural Networks and Learning Systems},
+	shortjournal = {{IEEE} Trans. Neural Netw. Learning Syst.},
+	author = {Mannucci, Tommaso and van Kampen, Erik-Jan and de Visser, Cornelis and Chu, Qiping},
+	urldate = {2020-02-04},
+	date = {2018-04},
+	langid = {english},
+	file = {Mannucci m. fl. - 2018 - Safe Exploration Algorithms for Reinforcement Lear.pdf:/home/marcus/Zotero/storage/CDX6FA8M/Mannucci m. fl. - 2018 - Safe Exploration Algorithms for Reinforcement Lear.pdf:application/pdf;Mannucci et al. - 2018 - Safe Exploration Algorithms for Reinforcement Lear.pdf:/home/marcus/Zotero/storage/S2QFA95P/Mannucci et al. - 2018 - Safe Exploration Algorithms for Reinforcement Lear.pdf:application/pdf;Mannucci et al. - 2018 - Safe Exploration Algorithms for Reinforcement Lear.pdf:/home/marcus/Zotero/storage/R99964ZA/Mannucci et al. - 2018 - Safe Exploration Algorithms for Reinforcement Lear.pdf:application/pdf}
+}
+
+@article{farias_universal_2010,
+	title = {Universal Reinforcement Learning},
+	volume = {56},
+	issn = {0018-9448, 1557-9654},
+	url = {http://ieeexplore.ieee.org/document/5452185/},
+	doi = {10.1109/TIT.2010.2043762},
+	pages = {2441--2454},
+	number = {5},
+	journaltitle = {{IEEE} Transactions on Information Theory},
+	shortjournal = {{IEEE} Trans. Inform. Theory},
+	author = {Farias, Vivek F. and Moallemi, Ciamac C. and Van Roy, Benjamin and Weissman, Tsachy},
+	urldate = {2020-02-04},
+	date = {2010-05},
+	langid = {english},
+	file = {Farias m. fl. - 2010 - Universal Reinforcement Learning.pdf:/home/marcus/Zotero/storage/7WDDI4BW/Farias m. fl. - 2010 - Universal Reinforcement Learning.pdf:application/pdf;Farias et al. - 2010 - Universal Reinforcement Learning.pdf:/home/marcus/Zotero/storage/G43KM5L7/Farias et al. - 2010 - Universal Reinforcement Learning.pdf:application/pdf;Farias et al. - 2010 - Universal Reinforcement Learning.pdf:/home/marcus/Zotero/storage/TUX2EUFG/Farias et al. - 2010 - Universal Reinforcement Learning.pdf:application/pdf}
+}
+
+@inproceedings{smart_effective_2002,
+	location = {Washington, {DC}, {USA}},
+	title = {Effective reinforcement learning for mobile robots},
+	volume = {4},
+	isbn = {978-0-7803-7272-6},
+	url = {http://ieeexplore.ieee.org/document/1014237/},
+	doi = {10.1109/ROBOT.2002.1014237},
+	abstract = {Programming mobile robots can be a long, time-consuming process. Specifying the low-level m a p ping from sensors to actuators is prone to programmer misconceptions, and debugging such a mapping can be tedious. The idea of having a robot learn how to accomplish a task, rather than being told explicitly is an appealing one. It seems easier and much more intuitive for the programmer to specify what the robot should be doing, and to let it learn the fine details of how to do it. In this paper, we introduce a framework for reinforcement learning on mobile robots and describe our experiments using it to learn simple tasks.},
+	eventtitle = {2002 {IEEE} International Conference on Robotics and Automation},
+	pages = {3404--3410},
+	booktitle = {Proceedings 2002 {IEEE} International Conference on Robotics and Automation (Cat. No.02CH37292)},
+	publisher = {{IEEE}},
+	author = {Smart, W.D. and Pack Kaelbling, L.},
+	urldate = {2020-02-04},
+	date = {2002},
+	langid = {english},
+	file = {Smart och Pack Kaelbling - 2002 - Effective reinforcement learning for mobile robots.pdf:/home/marcus/Zotero/storage/UXQSK5EV/Smart och Pack Kaelbling - 2002 - Effective reinforcement learning for mobile robots.pdf:application/pdf;Smart and Pack Kaelbling - 2002 - Effective reinforcement learning for mobile robots.pdf:/home/marcus/Zotero/storage/UPRHXNRX/Smart and Pack Kaelbling - 2002 - Effective reinforcement learning for mobile robots.pdf:application/pdf;Smart and Pack Kaelbling - 2002 - Effective reinforcement learning for mobile robots.pdf:/home/marcus/Zotero/storage/8CVE65NI/Smart and Pack Kaelbling - 2002 - Effective reinforcement learning for mobile robots.pdf:application/pdf}
+}
+
+@article{nachum_data-efficient_nodate,
+	title = {Data-Efficient Hierarchical Reinforcement Learning},
+	pages = {11},
+	author = {Nachum, Ofir},
+	langid = {english},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Nachum - Data-Efficient Hierarchical Reinforcement Learning.pdf:/home/marcus/Zotero/storage/X53PFGIM/Nachum - Data-Efficient Hierarchical Reinforcement Learning.pdf:application/pdf;Nachum - Data-Efficient Hierarchical Reinforcement Learning.pdf:/home/marcus/Zotero/storage/VNRP2PT9/Nachum - Data-Efficient Hierarchical Reinforcement Learning.pdf:application/pdf;Nachum et al. - 2018 - Data-Efficient Hierarchical Reinforcement Learning.pdf:/home/marcus/Zotero/storage/34VDTUCZ/Nachum et al. - 2018 - Data-Efficient Hierarchical Reinforcement Learning.pdf:application/pdf;Nachum - Data-Efficient Hierarchical Reinforcement Learning.pdf:/home/marcus/Zotero/storage/2CURVEFY/Nachum - Data-Efficient Hierarchical Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{hamrick_combining_2020,
+	title = {Combining Q-Learning and Search with Amortized Value Estimates},
+	url = {http://arxiv.org/abs/1912.02807},
+	abstract = {We introduce “Search with Amortized Value Estimates” ({SAVE}), an approach for combining model-free Q-learning with model-based Monte-Carlo Tree Search ({MCTS}). In {SAVE}, a learned prior over state-action values is used to guide {MCTS}, which estimates an improved set of state-action values. The new Q-estimates are then used in combination with real experience to update the prior. This effectively amortizes the value computation performed by {MCTS}, resulting in a cooperative relationship between model-free learning and model-based search. {SAVE} can be implemented on top of any Q-learning agent with access to a model, which we demonstrate by incorporating it into agents that perform challenging physical reasoning tasks and Atari. {SAVE} consistently achieves higher rewards with fewer training steps, and—in contrast to typical model-based search approaches—yields strong performance with very small search budgets. By combining real experience with information computed during search, {SAVE} demonstrates that it is possible to improve on both the performance of model-free learning and the computational cost of planning.},
+	journaltitle = {{arXiv}:1912.02807 [cs, stat]},
+	author = {Hamrick, Jessica B. and Bapst, Victor and Sanchez-Gonzalez, Alvaro and Pfaff, Tobias and Weber, Theophane and Buesing, Lars and Battaglia, Peter W.},
+	urldate = {2020-02-04},
+	date = {2020-01-10},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1912.02807},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Hamrick m. fl. - 2020 - Combining Q-Learning and Search with Amortized Val.pdf:/home/marcus/Zotero/storage/HH4TUHVR/Hamrick m. fl. - 2020 - Combining Q-Learning and Search with Amortized Val.pdf:application/pdf;Hamrick et al. - 2020 - Combining Q-Learning and Search with Amortized Val.pdf:/home/marcus/Zotero/storage/CCIEXM2D/Hamrick et al. - 2020 - Combining Q-Learning and Search with Amortized Val.pdf:application/pdf;Hamrick et al. - 2020 - Combining Q-Learning and Search with Amortized Val.pdf:/home/marcus/Zotero/storage/QJJVUVAR/Hamrick et al. - 2020 - Combining Q-Learning and Search with Amortized Val.pdf:application/pdf}
+}
+
+@article{degrave_quinoa_2019,
+	title = {Quinoa: a Q-function You Infer Normalized Over Actions},
+	url = {http://arxiv.org/abs/1911.01831},
+	shorttitle = {Quinoa},
+	abstract = {We present an algorithm for learning an approximate action-value soft Q-function in the relative entropy regularised reinforcement learning setting, for which an optimal improved policy can be recovered in closed form. We use recent advances in normalising flows for parametrising the policy together with a learned value-function; and show how this combination can be used to implicitly represent Q-values of an arbitrary policy in continuous action space. Using simple temporal difference learning on the Q-values then leads to a unified objective for policy and value learning. We show how this approach considerably simplifies standard Actor-Critic off-policy algorithms, removing the need for a policy optimisation step. We perform experiments on a range of established reinforcement learning benchmarks, demonstrating that our approach allows for complex, multimodal policy distributions in continuous action spaces, while keeping the process of sampling from the policy both fast and exact.},
+	journaltitle = {{arXiv}:1911.01831 [cs]},
+	author = {Degrave, Jonas and Abdolmaleki, Abbas and Springenberg, Jost Tobias and Heess, Nicolas and Riedmiller, Martin},
+	urldate = {2020-02-04},
+	date = {2019-11-05},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1911.01831},
+	keywords = {Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	file = {Degrave m. fl. - 2019 - Quinoa a Q-function You Infer Normalized Over Act.pdf:/home/marcus/Zotero/storage/X9FIH3CB/Degrave m. fl. - 2019 - Quinoa a Q-function You Infer Normalized Over Act.pdf:application/pdf;Degrave et al. - 2019 - Quinoa a Q-function You Infer Normalized Over Act.pdf:/home/marcus/Zotero/storage/MP57LZAX/Degrave et al. - 2019 - Quinoa a Q-function You Infer Normalized Over Act.pdf:application/pdf;Degrave et al. - 2019 - Quinoa a Q-function You Infer Normalized Over Act.pdf:/home/marcus/Zotero/storage/CQKK99A2/Degrave et al. - 2019 - Quinoa a Q-function You Infer Normalized Over Act.pdf:application/pdf}
+}
+
+@article{gajane_autonomous_2019,
+	title = {Autonomous exploration for navigating in non-stationary {CMPs}},
+	url = {http://arxiv.org/abs/1910.08446},
+	abstract = {We consider a setting in which the objective is to learn to navigate in a controlled Markov process ({CMP}) where transition probabilities may abruptly change. For this setting, we propose a performance measure called exploration steps which counts the time steps at which the learner lacks suﬃcient knowledge to navigate its environment eﬃciently. We devise a learning meta-algorithm, {MNM}, and prove an upper bound on the exploration steps in terms of the number of changes.},
+	journaltitle = {{arXiv}:1910.08446 [cs, stat]},
+	author = {Gajane, Pratik and Ortner, Ronald and Auer, Peter and Szepesvari, Csaba},
+	urldate = {2020-02-04},
+	date = {2019-10-18},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1910.08446},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Gajane m. fl. - 2019 - Autonomous exploration for navigating in non-stati.pdf:/home/marcus/Zotero/storage/A2BA4SXB/Gajane m. fl. - 2019 - Autonomous exploration for navigating in non-stati.pdf:application/pdf;Gajane et al. - 2019 - Autonomous exploration for navigating in non-stati.pdf:/home/marcus/Zotero/storage/Z4734FD9/Gajane et al. - 2019 - Autonomous exploration for navigating in non-stati.pdf:application/pdf;Gajane et al. - 2019 - Autonomous exploration for navigating in non-stati.pdf:/home/marcus/Zotero/storage/YTLKRUJP/Gajane et al. - 2019 - Autonomous exploration for navigating in non-stati.pdf:application/pdf}
+}
+
+@article{chen_autonomous_2019,
+	title = {Autonomous Driving using Safe Reinforcement Learning by Incorporating a Regret-based Human Lane-Changing Decision Model},
+	url = {http://arxiv.org/abs/1910.04803},
+	abstract = {It is expected that many human drivers will still prefer to drive themselves even if the self-driving technologies are ready. Therefore, human-driven vehicles and autonomous vehicles ({AVs}) will coexist in a mixed trafﬁc for a long time. To enable {AVs} to safely and efﬁciently maneuver in this mixed trafﬁc, it is critical that the {AVs} can understand how humans cope with risks and make driving-related decisions. On the other hand, the driving environment is highly dynamic and everchanging, and it is thus difﬁcult to enumerate all the scenarios and hard-code the controllers. To face up these challenges, in this work, we incorporate a human decision-making model in reinforcement learning to control {AVs} for safe and efﬁcient operations. Speciﬁcally, we adapt regret theory to describe a human driver’s lane-changing behavior, and ﬁt the personalized models to individual drivers for predicting their lane-changing decisions. The predicted decisions are incorporated in the safety constraints for reinforcement learning in training and in implementation. We then use an extended version of double deep Q-network ({DDQN}) to train our {AV} controller within the safety set. By doing so, the amount of collisions in training is reduced to zero, while the training accuracy is not impinged.},
+	journaltitle = {{arXiv}:1910.04803 [cs]},
+	author = {Chen, Dong and Jiang, Longsheng and Wang, Yue and Li, Zhaojian},
+	urldate = {2020-02-04},
+	date = {2019-10-10},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1910.04803},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {Chen m. fl. - 2019 - Autonomous Driving using Safe Reinforcement Learni.pdf:/home/marcus/Zotero/storage/58RDVDVB/Chen m. fl. - 2019 - Autonomous Driving using Safe Reinforcement Learni.pdf:application/pdf;Chen et al. - 2019 - Autonomous Driving using Safe Reinforcement Learni.pdf:/home/marcus/Zotero/storage/2JGKI4KD/Chen et al. - 2019 - Autonomous Driving using Safe Reinforcement Learni.pdf:application/pdf;Chen et al. - 2019 - Autonomous Driving using Safe Reinforcement Learni.pdf:/home/marcus/Zotero/storage/VNSPTLPK/Chen et al. - 2019 - Autonomous Driving using Safe Reinforcement Learni.pdf:application/pdf}
+}
+
+@article{folkers_controlling_2019,
+	title = {Controlling an Autonomous Vehicle with Deep Reinforcement Learning},
+	url = {http://arxiv.org/abs/1909.12153},
+	doi = {10.1109/IVS.2019.8814124},
+	abstract = {We present a control approach for autonomous vehicles based on deep reinforcement learning. A neural network agent is trained to map its estimated state to acceleration and steering commands given the objective of reaching a speciﬁc target state while considering detected obstacles. Learning is performed using state-of-the-art proximal policy optimization in combination with a simulated environment. Training from scratch takes ﬁve to nine hours. The resulting agent is evaluated within simulation and subsequently applied to control a fullsize research vehicle. For this, the autonomous exploration of a parking lot is considered, including turning maneuvers and obstacle avoidance. Altogether, this work is among the ﬁrst examples to successfully apply deep reinforcement learning to a real vehicle.},
+	pages = {2025--2031},
+	journaltitle = {2019 {IEEE} Intelligent Vehicles Symposium ({IV})},
+	author = {Folkers, Andreas and Rick, Matthias and Büskens, Christof},
+	urldate = {2020-02-04},
+	date = {2019-06},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1909.12153},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Robotics},
+	file = {Folkers m. fl. - 2019 - Controlling an Autonomous Vehicle with Deep Reinfo.pdf:/home/marcus/Zotero/storage/AAR2KEXI/Folkers m. fl. - 2019 - Controlling an Autonomous Vehicle with Deep Reinfo.pdf:application/pdf;Folkers et al. - 2019 - Controlling an Autonomous Vehicle with Deep Reinfo.pdf:/home/marcus/Zotero/storage/JJ7VBJ7X/Folkers et al. - 2019 - Controlling an Autonomous Vehicle with Deep Reinfo.pdf:application/pdf;Folkers et al. - 2019 - Controlling an Autonomous Vehicle with Deep Reinfo.pdf:/home/marcus/Zotero/storage/7RVFGJC9/Folkers et al. - 2019 - Controlling an Autonomous Vehicle with Deep Reinfo.pdf:application/pdf}
+}
+
+@article{dulac-arnold_challenges_2019,
+	title = {Challenges of Real-World Reinforcement Learning},
+	url = {http://arxiv.org/abs/1904.12901},
+	abstract = {Reinforcement learning ({RL}) has proven its worth in a series of artiﬁcial domains, and is beginning to show some successes in real-world scenarios. However, much of the research advances in {RL} are often hard to leverage in realworld systems due to a series of assumptions that are rarely satisﬁed in practice. We present a set of nine unique challenges that must be addressed to productionize {RL} to real world problems. For each of these challenges, we specify the exact meaning of the challenge, present some approaches from the literature, and specify some metrics for evaluating that challenge. An approach that addresses all nine challenges would be applicable to a large number of real world problems. We also present an example domain that has been modiﬁed to present these challenges as a testbed for practical {RL} research.},
+	journaltitle = {{arXiv}:1904.12901 [cs, stat]},
+	author = {Dulac-Arnold, Gabriel and Mankowitz, Daniel and Hester, Todd},
+	urldate = {2020-02-04},
+	date = {2019-04-29},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1904.12901},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Robotics},
+	file = {Dulac-Arnold m. fl. - 2019 - Challenges of Real-World Reinforcement Learning.pdf:/home/marcus/Zotero/storage/K4NPMBNP/Dulac-Arnold m. fl. - 2019 - Challenges of Real-World Reinforcement Learning.pdf:application/pdf;Dulac-Arnold et al. - 2019 - Challenges of Real-World Reinforcement Learning.pdf:/home/marcus/Zotero/storage/PACARZSR/Dulac-Arnold et al. - 2019 - Challenges of Real-World Reinforcement Learning.pdf:application/pdf;Dulac-Arnold et al. - 2019 - Challenges of Real-World Reinforcement Learning.pdf:/home/marcus/Zotero/storage/6UWDJ4Z8/Dulac-Arnold et al. - 2019 - Challenges of Real-World Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{mccandlish_empirical_2018,
+	title = {An Empirical Model of Large-Batch Training},
+	url = {http://arxiv.org/abs/1812.06162},
+	abstract = {In an increasing number of domains it has been demonstrated that deep learning models can be trained using relatively large batch sizes without sacriﬁcing data efﬁciency. However the limits of this massive data parallelism seem to differ from domain to domain, ranging from batches of tens of thousands in {ImageNet} to batches of millions in {RL} agents that play the game Dota 2. To our knowledge there is limited conceptual understanding of why these limits to batch size differ or how we might choose the correct batch size in a new domain. In this paper, we demonstrate that a simple and easy-to-measure statistic called the gradient noise scale predicts the largest useful batch size across many domains and applications, including a number of supervised learning datasets ({MNIST}, {SVHN}, {CIFAR}10, {ImageNet}, Billion Word), reinforcement learning domains (Atari and Dota), and even generative model training (autoencoders on {SVHN}). We ﬁnd that the noise scale increases as the loss decreases over a training run and depends on the model size primarily through improved model performance. Our empirically-motivated theory also describes the tradeoff between compute-efﬁciency and time-efﬁciency, and provides a rough model of the beneﬁts of adaptive batch-size training.},
+	journaltitle = {{arXiv}:1812.06162 [cs, stat]},
+	author = {{McCandlish}, Sam and Kaplan, Jared and Amodei, Dario and Team, {OpenAI} Dota},
+	urldate = {2020-02-04},
+	date = {2018-12-14},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1812.06162},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {McCandlish m. fl. - 2018 - An Empirical Model of Large-Batch Training.pdf:/home/marcus/Zotero/storage/Q6T8NWCK/McCandlish m. fl. - 2018 - An Empirical Model of Large-Batch Training.pdf:application/pdf;McCandlish et al. - 2018 - An Empirical Model of Large-Batch Training.pdf:/home/marcus/Zotero/storage/CMA532DZ/McCandlish et al. - 2018 - An Empirical Model of Large-Batch Training.pdf:application/pdf;McCandlish et al. - 2018 - An Empirical Model of Large-Batch Training.pdf:/home/marcus/Zotero/storage/QDJGRZTK/McCandlish et al. - 2018 - An Empirical Model of Large-Batch Training.pdf:application/pdf}
+}
+
+@article{castro_dopamine_2018,
+	title = {Dopamine: A Research Framework for Deep Reinforcement Learning},
+	url = {http://arxiv.org/abs/1812.06110},
+	shorttitle = {Dopamine},
+	abstract = {Deep reinforcement learning (deep {RL}) research has grown signiﬁcantly in recent years. A number of software offerings now exist that provide stable, comprehensive implementations for benchmarking. At the same time, recent deep {RL} research has become more diverse in its goals. In this paper we introduce Dopamine, a new research framework for deep {RL} that aims to support some of that diversity. Dopamine is open-source, {TensorFlow}-based, and provides compact and reliable implementations of some state-of-the-art deep {RL} agents. We complement this offering with a taxonomy of the different research objectives in deep {RL} research. While by no means exhaustive, our analysis highlights the heterogeneity of research in the ﬁeld, and the value of frameworks such as ours.},
+	journaltitle = {{arXiv}:1812.06110 [cs]},
+	author = {Castro, Pablo Samuel and Moitra, Subhodeep and Gelada, Carles and Kumar, Saurabh and Bellemare, Marc G.},
+	urldate = {2020-02-04},
+	date = {2018-12-14},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1812.06110},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	file = {Castro m. fl. - 2018 - Dopamine A Research Framework for Deep Reinforcem.pdf:/home/marcus/Zotero/storage/NMW2AX5K/Castro m. fl. - 2018 - Dopamine A Research Framework for Deep Reinforcem.pdf:application/pdf;Castro et al. - 2018 - Dopamine A Research Framework for Deep Reinforcem.pdf:/home/marcus/Zotero/storage/DS5ZDWBC/Castro et al. - 2018 - Dopamine A Research Framework for Deep Reinforcem.pdf:application/pdf;Castro et al. - 2018 - Dopamine A Research Framework for Deep Reinforcem.pdf:/home/marcus/Zotero/storage/DHGWVRX2/Castro et al. - 2018 - Dopamine A Research Framework for Deep Reinforcem.pdf:application/pdf}
+}
+
+@article{christiano_supervising_2018,
+	title = {Supervising strong learners by amplifying weak experts},
+	url = {http://arxiv.org/abs/1810.08575},
+	abstract = {Many real world learning tasks involve complex or hard-to-specify objectives, and using an easier-to-specify proxy can lead to poor performance or misaligned behavior. One solution is to have humans provide a training signal by demonstrating or judging performance, but this approach fails if the task is too complicated for a human to directly evaluate. We propose Iterated Ampliﬁcation, an alternative training strategy which progressively builds up a training signal for difﬁcult problems by combining solutions to easier subproblems. Iterated Ampliﬁcation is closely related to Expert Iteration (Anthony et al., 2017; Silver et al., 2017b), except that it uses no external reward function. We present results in algorithmic environments, showing that Iterated Ampliﬁcation can efﬁciently learn complex behaviors.},
+	journaltitle = {{arXiv}:1810.08575 [cs, stat]},
+	author = {Christiano, Paul and Shlegeris, Buck and Amodei, Dario},
+	urldate = {2020-02-04},
+	date = {2018-10-19},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1810.08575},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Christiano m. fl. - 2018 - Supervising strong learners by amplifying weak exp.pdf:/home/marcus/Zotero/storage/2RKN88RM/Christiano m. fl. - 2018 - Supervising strong learners by amplifying weak exp.pdf:application/pdf;Christiano et al. - 2018 - Supervising strong learners by amplifying weak exp.pdf:/home/marcus/Zotero/storage/XCKP9TBL/Christiano et al. - 2018 - Supervising strong learners by amplifying weak exp.pdf:application/pdf;Christiano et al. - 2018 - Supervising strong learners by amplifying weak exp.pdf:/home/marcus/Zotero/storage/TPMQNJAS/Christiano et al. - 2018 - Supervising strong learners by amplifying weak exp.pdf:application/pdf}
+}
+
+@article{li_deep_2018,
+	title = {Deep Reinforcement Learning},
+	url = {http://arxiv.org/abs/1810.06339},
+	abstract = {We discuss deep reinforcement learning in an overview style. We draw a big picture, filled with details. We discuss six core elements, six important mechanisms, and twelve applications, focusing on contemporary work, and in historical contexts. We start with background of artificial intelligence, machine learning, deep learning, and reinforcement learning ({RL}), with resources. Next we discuss {RL} core elements, including value function, policy, reward, model, exploration vs. exploitation, and representation. Then we discuss important mechanisms for {RL}, including attention and memory, unsupervised learning, hierarchical {RL}, multi-agent {RL}, relational {RL}, and learning to learn. After that, we discuss {RL} applications, including games, robotics, natural language processing ({NLP}), computer vision, finance, business management, healthcare, education, energy, transportation, computer systems, and, science, engineering, and art. Finally we summarize briefly, discuss challenges and opportunities, and close with an epilogue.},
+	journaltitle = {{arXiv}:1810.06339 [cs, stat]},
+	author = {Li, Yuxi},
+	urldate = {2020-02-04},
+	date = {2018-10-15},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1810.06339},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Li - 2018 - Deep Reinforcement Learning.pdf:/home/marcus/Zotero/storage/7AGUJ2B8/Li - 2018 - Deep Reinforcement Learning.pdf:application/pdf;Li - 2018 - Deep Reinforcement Learning.pdf:/home/marcus/Zotero/storage/NZZRS2DM/Li - 2018 - Deep Reinforcement Learning.pdf:application/pdf;Li - 2018 - Deep Reinforcement Learning.pdf:/home/marcus/Zotero/storage/ZCF34HNC/Li - 2018 - Deep Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{xu_autonomous_2019,
+	title = {Autonomous Driving in Reality with Reinforcement Learning and Image Translation},
+	url = {http://arxiv.org/abs/1801.05299},
+	abstract = {Supervised learning is widely used in training autonomous driving vehicle. However, it is trained with large amount of supervised labeled data. Reinforcement learning can be trained without abundant labeled data, but we cannot train it in reality because it would involve many unpredictable accidents. Nevertheless, training an agent with good performance in virtual environment is relatively much easier. Because of the huge difference between virtual and real, how to ﬁll the gap between virtual and real is challenging. In this paper, we proposed a novel framework of reinforcement learning with image semantic segmentation network to make the whole model adaptable to reality. The agent is trained in {TORCS}, a car racing simulator.},
+	journaltitle = {{arXiv}:1801.05299 [cs]},
+	author = {Xu, Nayun and Tan, Bowen and Kong, Bingyu},
+	urldate = {2020-02-04},
+	date = {2019-04-25},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1801.05299},
+	keywords = {Computer Science - Computer Vision and Pattern Recognition},
+	file = {Xu m. fl. - 2019 - Autonomous Driving in Reality with Reinforcement L.pdf:/home/marcus/Zotero/storage/95P62PRQ/Xu m. fl. - 2019 - Autonomous Driving in Reality with Reinforcement L.pdf:application/pdf;Xu et al. - 2019 - Autonomous Driving in Reality with Reinforcement L.pdf:/home/marcus/Zotero/storage/NS44JQHB/Xu et al. - 2019 - Autonomous Driving in Reality with Reinforcement L.pdf:application/pdf;Xu et al. - 2019 - Autonomous Driving in Reality with Reinforcement L.pdf:/home/marcus/Zotero/storage/3YT8NQMA/Xu et al. - 2019 - Autonomous Driving in Reality with Reinforcement L.pdf:application/pdf}
+}
+
+@article{fridman_deeptraffic_2019,
+	title = {{DeepTraffic}: Crowdsourced Hyperparameter Tuning of Deep Reinforcement Learning Systems for Multi-Agent Dense Traffic Navigation},
+	url = {http://arxiv.org/abs/1801.02805},
+	shorttitle = {{DeepTraffic}},
+	abstract = {We present a trafﬁc simulation named {DeepTrafﬁc} where the planning systems for a subset of the vehicles are handled by a neural network as part of a model-free, off-policy reinforcement learning process. The primary goal of {DeepTrafﬁc} is to make the hands-on study of deep reinforcement learning accessible to thousands of students, educators, and researchers in order to inspire and fuel the exploration and evaluation of deep Q-learning network variants and hyperparameter conﬁgurations through large-scale, open competition. This paper investigates the crowd-sourced hyperparameter tuning of the policy network that resulted from the ﬁrst iteration of the {DeepTrafﬁc} competition where thousands of participants actively searched through the hyperparameter space.},
+	journaltitle = {{arXiv}:1801.02805 [cs]},
+	author = {Fridman, Lex and Terwilliger, Jack and Jenik, Benedikt},
+	urldate = {2020-02-04},
+	date = {2019-01-02},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1801.02805},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Neural and Evolutionary Computing, Computer Science - Robotics},
+	file = {Fridman m. fl. - 2019 - DeepTraffic Crowdsourced Hyperparameter Tuning of.pdf:/home/marcus/Zotero/storage/RZN4T5V4/Fridman m. fl. - 2019 - DeepTraffic Crowdsourced Hyperparameter Tuning of.pdf:application/pdf;Fridman et al. - 2019 - DeepTraffic Crowdsourced Hyperparameter Tuning of.pdf:/home/marcus/Zotero/storage/L6VYKBLK/Fridman et al. - 2019 - DeepTraffic Crowdsourced Hyperparameter Tuning of.pdf:application/pdf;Fridman et al. - 2019 - DeepTraffic Crowdsourced Hyperparameter Tuning of.pdf:/home/marcus/Zotero/storage/AAVNEGCK/Fridman et al. - 2019 - DeepTraffic Crowdsourced Hyperparameter Tuning of.pdf:application/pdf}
+}
+
+@article{vinyals_starcraft_2017,
+	title = {{StarCraft} {II}: A New Challenge for Reinforcement Learning},
+	url = {http://arxiv.org/abs/1708.04782},
+	shorttitle = {{StarCraft} {II}},
+	abstract = {This paper introduces {SC}2LE ({StarCraft} {II} Learning Environment), a reinforcement learning environment based on the game {StarCraft} {II}. This domain poses a new grand challenge for reinforcement learning, representing a more difﬁcult class of problems than considered in most prior work. It is a multi-agent problem with multiple players interacting; there is imperfect information due to a partially observed map; it has a large action space involving the selection and control of hundreds of units; it has a large state space that must be observed solely from raw input feature planes; and it has delayed credit assignment requiring long-term strategies over thousands of steps. We describe the observation, action, and reward speciﬁcation for the {StarCraft} {II} domain and provide an open source Python-based interface for communicating with the game engine. In addition to the main game maps, we provide a suite of mini-games focusing on different elements of {StarCraft} {II} gameplay. For the main game maps, we also provide an accompanying dataset of game replay data from human expert players. We give initial baseline results for neural networks trained from this data to predict game outcomes and player actions. Finally, we present initial baseline results for canonical deep reinforcement learning agents applied to the {StarCraft} {II} domain. On the mini-games, these agents learn to achieve a level of play that is comparable to a novice player. However, when trained on the main game, these agents are unable to make signiﬁcant progress. Thus, {SC}2LE offers a new and challenging environment for exploring deep reinforcement learning algorithms and architectures.},
+	journaltitle = {{arXiv}:1708.04782 [cs]},
+	author = {Vinyals, Oriol and Ewalds, Timo and Bartunov, Sergey and Georgiev, Petko and Vezhnevets, Alexander Sasha and Yeo, Michelle and Makhzani, Alireza and Küttler, Heinrich and Agapiou, John and Schrittwieser, Julian and Quan, John and Gaffney, Stephen and Petersen, Stig and Simonyan, Karen and Schaul, Tom and van Hasselt, Hado and Silver, David and Lillicrap, Timothy and Calderone, Kevin and Keet, Paul and Brunasso, Anthony and Lawrence, David and Ekermo, Anders and Repp, Jacob and Tsing, Rodney},
+	urldate = {2020-02-04},
+	date = {2017-08-16},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1708.04782},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	file = {Vinyals m. fl. - 2017 - StarCraft II A New Challenge for Reinforcement Le.pdf:/home/marcus/Zotero/storage/VXNJZSJ9/Vinyals m. fl. - 2017 - StarCraft II A New Challenge for Reinforcement Le.pdf:application/pdf;Vinyals et al. - 2017 - StarCraft II A New Challenge for Reinforcement Le.pdf:/home/marcus/Zotero/storage/KIMMEAR4/Vinyals et al. - 2017 - StarCraft II A New Challenge for Reinforcement Le.pdf:application/pdf;Vinyals et al. - 2017 - StarCraft II A New Challenge for Reinforcement Le.pdf:/home/marcus/Zotero/storage/HEBE2UD6/Vinyals et al. - 2017 - StarCraft II A New Challenge for Reinforcement Le.pdf:application/pdf}
+}
+
+@article{isele_navigating_2018,
+	title = {Navigating Occluded Intersections with Autonomous Vehicles using Deep Reinforcement Learning},
+	url = {http://arxiv.org/abs/1705.01196},
+	abstract = {Providing an efﬁcient strategy to navigate safely through unsignaled intersections is a difﬁcult task that requires determining the intent of other drivers. We explore the effectiveness of Deep Reinforcement Learning to handle intersection problems. Using recent advances in Deep {RL}, we are able to learn policies that surpass the performance of a commonly-used heuristic approach in several metrics including task completion time and goal success rate and have limited ability to generalize. We then explore a system’s ability to learn active sensing behaviors to enable navigating safely in the case of occlusions. Our analysis, provides insight into the intersection handling problem, the solutions learned by the network point out several shortcomings of current rule-based methods, and the failures of our current deep reinforcement learning system point to future research directions.},
+	journaltitle = {{arXiv}:1705.01196 [cs]},
+	author = {Isele, David and Rahimi, Reza and Cosgun, Akansel and Subramanian, Kaushik and Fujimura, Kikuo},
+	urldate = {2020-02-04},
+	date = {2018-02-26},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1705.01196},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Robotics},
+	file = {Isele m. fl. - 2018 - Navigating Occluded Intersections with Autonomous .pdf:/home/marcus/Zotero/storage/F7K7ZSVT/Isele m. fl. - 2018 - Navigating Occluded Intersections with Autonomous .pdf:application/pdf;Isele et al. - 2018 - Navigating Occluded Intersections with Autonomous .pdf:/home/marcus/Zotero/storage/VHVXZI9Z/Isele et al. - 2018 - Navigating Occluded Intersections with Autonomous .pdf:application/pdf;Isele et al. - 2018 - Navigating Occluded Intersections with Autonomous .pdf:/home/marcus/Zotero/storage/D6DKD67V/Isele et al. - 2018 - Navigating Occluded Intersections with Autonomous .pdf:application/pdf}
+}
+
+@article{pan_virtual_2017,
+	title = {Virtual to Real Reinforcement Learning for Autonomous Driving},
+	url = {http://arxiv.org/abs/1704.03952},
+	abstract = {Reinforcement learning is considered as a promising direction for driving policy learning. However, training autonomous driving vehicle with reinforcement learning in real environment involves non-affordable trial-and-error. It is more desirable to ﬁrst train in a virtual environment and then transfer to the real environment. In this paper, we propose a novel realistic translation network to make model trained in virtual environment be workable in real world. The proposed network can convert non-realistic virtual image input into a realistic one with similar scene structure. Given realistic frames as input, driving policy trained by reinforcement learning can nicely adapt to real world driving. Experiments show that our proposed virtual to real ({VR}) reinforcement learning ({RL}) works pretty well. To our knowledge, this is the ﬁrst successful case of driving policy trained by reinforcement learning that can adapt to real world driving data.},
+	journaltitle = {{arXiv}:1704.03952 [cs]},
+	author = {Pan, Xinlei and You, Yurong and Wang, Ziyan and Lu, Cewu},
+	urldate = {2020-02-04},
+	date = {2017-09-26},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1704.03952},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Computer Vision and Pattern Recognition},
+	file = {Pan m. fl. - 2017 - Virtual to Real Reinforcement Learning for Autonom.pdf:/home/marcus/Zotero/storage/TVI9V89Z/Pan m. fl. - 2017 - Virtual to Real Reinforcement Learning for Autonom.pdf:application/pdf;Pan et al. - 2017 - Virtual to Real Reinforcement Learning for Autonom.pdf:/home/marcus/Zotero/storage/P2DUTQ4A/Pan et al. - 2017 - Virtual to Real Reinforcement Learning for Autonom.pdf:application/pdf;Pan et al. - 2017 - Virtual to Real Reinforcement Learning for Autonom.pdf:/home/marcus/Zotero/storage/PIQQ5WFY/Pan et al. - 2017 - Virtual to Real Reinforcement Learning for Autonom.pdf:application/pdf}
+}
+
+@article{sallab_deep_2017,
+	title = {Deep Reinforcement Learning framework for Autonomous Driving},
+	volume = {2017},
+	issn = {2470-1173},
+	url = {http://arxiv.org/abs/1704.02532},
+	doi = {10.2352/ISSN.2470-1173.2017.19.AVM-023},
+	abstract = {Reinforcement learning is considered to be a strong {AI} paradigm which can be used to teach machines through interaction with the environment and learning from their mistakes. Despite its perceived utility, it has not yet been successfully applied in automotive applications. Motivated by the successful demonstrations of learning of Atari games and Go by Google {DeepMind}, we propose a framework for autonomous driving using deep reinforcement learning. This is of particular relevance as it is difﬁcult to pose autonomous driving as a supervised learning problem due to strong interactions with the environment including other vehicles, pedestrians and roadworks. As it is a relatively new area of research for autonomous driving, we provide a short overview of deep reinforcement learning and then describe our proposed framework. It incorporates Recurrent Neural Networks for information integration, enabling the car to handle partially observable scenarios. It also integrates the recent work on attention models to focus on relevant information, thereby reducing the computational complexity for deployment on embedded hardware. The framework was tested in an open source 3D car racing simulator called {TORCS}. Our simulation results demonstrate learning of autonomous maneuvering in a scenario of complex road curvatures and simple interaction of other vehicles.},
+	pages = {70--76},
+	number = {19},
+	journaltitle = {Electronic Imaging},
+	shortjournal = {Electronic Imaging},
+	author = {Sallab, Ahmad El and Abdou, Mohammed and Perot, Etienne and Yogamani, Senthil},
+	urldate = {2020-02-04},
+	date = {2017-01-29},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1704.02532},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Robotics},
+	file = {Sallab m. fl. - 2017 - Deep Reinforcement Learning framework for Autonomo.pdf:/home/marcus/Zotero/storage/GMZRU6K3/Sallab m. fl. - 2017 - Deep Reinforcement Learning framework for Autonomo.pdf:application/pdf;Sallab et al. - 2017 - Deep Reinforcement Learning framework for Autonomo.pdf:/home/marcus/Zotero/storage/9VZ7G9HC/Sallab et al. - 2017 - Deep Reinforcement Learning framework for Autonomo.pdf:application/pdf;Sallab et al. - 2017 - Deep Reinforcement Learning framework for Autonomo.pdf:/home/marcus/Zotero/storage/UM4Y5JUU/Sallab et al. - 2017 - Deep Reinforcement Learning framework for Autonomo.pdf:application/pdf}
+}
+
+@article{sallab_end--end_2016,
+	title = {End-to-End Deep Reinforcement Learning for Lane Keeping Assist},
+	url = {http://arxiv.org/abs/1612.04340},
+	abstract = {Reinforcement learning is considered to be a strong {AI} paradigm which can be used to teach machines through interaction with the environment and learning from their mistakes, but it has not yet been successfully used for automotive applications. There has recently been a revival of interest in the topic, however, driven by the ability of deep learning algorithms to learn good representations of the environment. Motivated by Google {DeepMind}’s successful demonstrations of learning for games from Breakout to Go, we will propose different methods for autonomous driving using deep reinforcement learning. This is of particular interest as it is difﬁcult to pose autonomous driving as a supervised learning problem as it has a strong interaction with the environment including other vehicles, pedestrians and roadworks. As this is a relatively new area of research for autonomous driving, we will formulate two main categories of algorithms: 1) Discrete actions category, and 2) Continuous actions category. For the discrete actions category, we will deal with Deep Q-Network Algorithm ({DQN}) while for the continuous actions category, we will deal with Deep Deterministic Actor Critic Algorithm ({DDAC}). In addition to that, We will also discover the performance of these two categories on an open source car simulator for Racing called ({TORCS}) which stands for The Open Racing car Simulator. Our simulation results demonstrate learning of autonomous maneuvering in a scenario of complex road curvatures and simple interaction with other vehicles. Finally, we explain the effect of some restricted conditions, put on the car during the learning phase, on the convergence time for ﬁnishing its learning phase.},
+	journaltitle = {{arXiv}:1612.04340 [cs, stat]},
+	author = {Sallab, Ahmad El and Abdou, Mohammed and Perot, Etienne and Yogamani, Senthil},
+	urldate = {2020-02-04},
+	date = {2016-12-13},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1612.04340},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Robotics},
+	file = {Sallab m. fl. - 2016 - End-to-End Deep Reinforcement Learning for Lane Ke.pdf:/home/marcus/Zotero/storage/PPMZK98I/Sallab m. fl. - 2016 - End-to-End Deep Reinforcement Learning for Lane Ke.pdf:application/pdf;Sallab et al. - 2016 - End-to-End Deep Reinforcement Learning for Lane Ke.pdf:/home/marcus/Zotero/storage/3ESUF4DW/Sallab et al. - 2016 - End-to-End Deep Reinforcement Learning for Lane Ke.pdf:application/pdf;Sallab et al. - 2016 - End-to-End Deep Reinforcement Learning for Lane Ke.pdf:/home/marcus/Zotero/storage/RD8F39K4/Sallab et al. - 2016 - End-to-End Deep Reinforcement Learning for Lane Ke.pdf:application/pdf}
+}
+
+@article{shalev-shwartz_safe_2016,
+	title = {Safe, Multi-Agent, Reinforcement Learning for Autonomous Driving},
+	url = {http://arxiv.org/abs/1610.03295},
+	abstract = {Autonomous driving is a multi-agent setting where the host vehicle must apply sophisticated negotiation skills with other road users when overtaking, giving way, merging, taking left and right turns and while pushing ahead in unstructured urban roadways. Since there are many possible scenarios, manually tackling all possible cases will likely yield a too simplistic policy. Moreover, one must balance between unexpected behavior of other drivers/pedestrians and at the same time not to be too defensive so that normal trafﬁc ﬂow is maintained.},
+	journaltitle = {{arXiv}:1610.03295 [cs, stat]},
+	author = {Shalev-Shwartz, Shai and Shammah, Shaked and Shashua, Amnon},
+	urldate = {2020-02-04},
+	date = {2016-10-11},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1610.03295},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Shalev-Shwartz m. fl. - 2016 - Safe, Multi-Agent, Reinforcement Learning for Auto.pdf:/home/marcus/Zotero/storage/IAH5ATQV/Shalev-Shwartz m. fl. - 2016 - Safe, Multi-Agent, Reinforcement Learning for Auto.pdf:application/pdf;Shalev-Shwartz et al. - 2016 - Safe, Multi-Agent, Reinforcement Learning for Auto.pdf:/home/marcus/Zotero/storage/WLCTC9PE/Shalev-Shwartz et al. - 2016 - Safe, Multi-Agent, Reinforcement Learning for Auto.pdf:application/pdf;Shalev-Shwartz et al. - 2016 - Safe, Multi-Agent, Reinforcement Learning for Auto.pdf:/home/marcus/Zotero/storage/8U9CN8CB/Shalev-Shwartz et al. - 2016 - Safe, Multi-Agent, Reinforcement Learning for Auto.pdf:application/pdf}
+}
+
+@article{lillicrap_continuous_2019,
+	title = {Continuous control with deep reinforcement learning},
+	url = {http://arxiv.org/abs/1509.02971},
+	abstract = {We adapt the ideas underlying the success of Deep Q-Learning to the continuous action domain. We present an actor-critic, model-free algorithm based on the deterministic policy gradient that can operate over continuous action spaces. Using the same learning algorithm, network architecture and hyper-parameters, our algorithm robustly solves more than 20 simulated physics tasks, including classic problems such as cartpole swing-up, dexterous manipulation, legged locomotion and car driving. Our algorithm is able to ﬁnd policies whose performance is competitive with those found by a planning algorithm with full access to the dynamics of the domain and its derivatives. We further demonstrate that for many of the tasks the algorithm can learn policies “end-to-end”: directly from raw pixel inputs.},
+	journaltitle = {{arXiv}:1509.02971 [cs, stat]},
+	author = {Lillicrap, Timothy P. and Hunt, Jonathan J. and Pritzel, Alexander and Heess, Nicolas and Erez, Tom and Tassa, Yuval and Silver, David and Wierstra, Daan},
+	urldate = {2020-02-04},
+	date = {2019-07-05},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1509.02971},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Lillicrap m. fl. - 2019 - Continuous control with deep reinforcement learnin.pdf:/home/marcus/Zotero/storage/HESXEFEK/Lillicrap m. fl. - 2019 - Continuous control with deep reinforcement learnin.pdf:application/pdf;Lillicrap et al. - 2019 - Continuous control with deep reinforcement learnin.pdf:/home/marcus/Zotero/storage/NTR67R2S/Lillicrap et al. - 2019 - Continuous control with deep reinforcement learnin.pdf:application/pdf;Lillicrap et al. - 2019 - Continuous control with deep reinforcement learnin.pdf:/home/marcus/Zotero/storage/BVZH2UW2/Lillicrap et al. - 2019 - Continuous control with deep reinforcement learnin.pdf:application/pdf}
+}
+
+@article{schulman_high-dimensional_2018,
+	title = {High-Dimensional Continuous Control Using Generalized Advantage Estimation},
+	url = {http://arxiv.org/abs/1506.02438},
+	abstract = {Policy gradient methods are an appealing approach in reinforcement learning because they directly optimize the cumulative reward and can straightforwardly be used with nonlinear function approximators such as neural networks. The two main challenges are the large number of samples typically required, and the difﬁculty of obtaining stable and steady improvement despite the nonstationarity of the incoming data. We address the ﬁrst challenge by using value functions to substantially reduce the variance of policy gradient estimates at the cost of some bias, with an exponentially-weighted estimator of the advantage function that is analogous to {TD}(λ). We address the second challenge by using trust region optimization procedure for both the policy and the value function, which are represented by neural networks.},
+	journaltitle = {{arXiv}:1506.02438 [cs]},
+	author = {Schulman, John and Moritz, Philipp and Levine, Sergey and Jordan, Michael and Abbeel, Pieter},
+	urldate = {2020-02-04},
+	date = {2018-10-20},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1506.02438},
+	keywords = {Computer Science - Machine Learning, Computer Science - Robotics, Electrical Engineering and Systems Science - Systems and Control},
+	file = {Schulman m. fl. - 2018 - High-Dimensional Continuous Control Using Generali.pdf:/home/marcus/Zotero/storage/KSJRFPW7/Schulman m. fl. - 2018 - High-Dimensional Continuous Control Using Generali.pdf:application/pdf;Schulman et al. - 2018 - High-Dimensional Continuous Control Using Generali.pdf:/home/marcus/Zotero/storage/CK9E3YSI/Schulman et al. - 2018 - High-Dimensional Continuous Control Using Generali.pdf:application/pdf;Schulman et al. - 2018 - High-Dimensional Continuous Control Using Generali.pdf:/home/marcus/Zotero/storage/SXU2ZNC9/Schulman et al. - 2018 - High-Dimensional Continuous Control Using Generali.pdf:application/pdf}
+}
+
+@article{hu_multiagent_nodate,
+	title = {Multiagent Reinforcement {LeAarlgnoinrigt}:{hmTheoretical} Framework and an},
+	abstract = {In this paper, we adopt general-sum stochastic games as a framework for multiagent reinforcement learning. Our work extends previous work by Littman on zero-sum stochastic games to a broader framework. We design a multiagent Q-learning method under this framework, and prove that it converges to a Nash equilibrium under speci ed conditions. This algorithm is useful for nding the optimal strategy when there exists a unique Nash equilibrium in the game. When there exist multiple Nash equilibria in the game, this algorithm should be combined with other learning techniques to nd optimal strategies.},
+	pages = {9},
+	author = {Hu, Junling and Wellman, Michael P},
+	langid = {english},
+	file = {Hu och Wellman - Multiagent Reinforcement LeAarlgnoinrigthmTheoret.pdf:/home/marcus/Zotero/storage/67DGVIS2/Hu och Wellman - Multiagent Reinforcement LeAarlgnoinrigthmTheoret.pdf:application/pdf;Hu and Wellman - Multiagent Reinforcement LeAarlgnoinrigthmTheoret.pdf:/home/marcus/Zotero/storage/ZED5GVZ2/Hu and Wellman - Multiagent Reinforcement LeAarlgnoinrigthmTheoret.pdf:application/pdf;Hu and Wellman - Multiagent Reinforcement LeAarlgnoinrigthmTheoret.pdf:/home/marcus/Zotero/storage/GDDMDLJK/Hu and Wellman - Multiagent Reinforcement LeAarlgnoinrigthmTheoret.pdf:application/pdf}
+}
+
+@article{doya_multiple_2002,
+	title = {Multiple Model-Based Reinforcement Learning},
+	volume = {14},
+	issn = {0899-7667, 1530-888X},
+	url = {http://www.mitpressjournals.org/doi/10.1162/089976602753712972},
+	doi = {10.1162/089976602753712972},
+	pages = {1347--1369},
+	number = {6},
+	journaltitle = {Neural Computation},
+	shortjournal = {Neural Computation},
+	author = {Doya, Kenji and Samejima, Kazuyuki and Katagiri, Ken-ichi and Kawato, Mitsuo},
+	urldate = {2020-02-04},
+	date = {2002-06},
+	langid = {english},
+	file = {Doya m. fl. - 2002 - Multiple Model-Based Reinforcement Learning.pdf:/home/marcus/Zotero/storage/8SQ5M6SP/Doya m. fl. - 2002 - Multiple Model-Based Reinforcement Learning.pdf:application/pdf;Doya et al. - 2002 - Multiple Model-Based Reinforcement Learning.pdf:/home/marcus/Zotero/storage/YBC3CASQ/Doya et al. - 2002 - Multiple Model-Based Reinforcement Learning.pdf:application/pdf;Doya et al. - 2002 - Multiple Model-Based Reinforcement Learning.pdf:/home/marcus/Zotero/storage/ZHCVC3TV/Doya et al. - 2002 - Multiple Model-Based Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{guestrin_coordinated_nodate,
+	title = {Coordinated Reinforcement Learning},
+	abstract = {We present several new algorithms for multiagent reinforcement learning. A common feature of these algorithms is a parameterized, structured representation of a policy or value function. This structure is leveraged in an approach we call coordinated reinforcement learning, by which agents coordinate both their action selection activities and their parameter updates. Within the limits of our parametric representations, the agents will determine a jointly optimal action without explicitly considering every possible action in their exponentially large joint action space. Our methods differ from many previous reinforcement learning approaches to multiagent coordination in that structured communication and coordination between agents appears at the core of both the learning algorithm and the execution architecture. Our experimental results, comparing our approach to other {RL} methods, illustrate both the quality of the policies obtained and the additional beneﬁts of coordination.},
+	pages = {8},
+	author = {Guestrin, Carlos and Lagoudakis, Michail and Parr, Ronald},
+	langid = {english},
+	file = {Guestrin m. fl. - Coordinated Reinforcement Learning.pdf:/home/marcus/Zotero/storage/H2XXSQFI/Guestrin m. fl. - Coordinated Reinforcement Learning.pdf:application/pdf;Guestrin et al. - Coordinated Reinforcement Learning.pdf:/home/marcus/Zotero/storage/9E3VHLUI/Guestrin et al. - Coordinated Reinforcement Learning.pdf:application/pdf;Guestrin et al. - Coordinated Reinforcement Learning.pdf:/home/marcus/Zotero/storage/YZD9ETFT/Guestrin et al. - Coordinated Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{zahavy_learn_nodate,
+	title = {Learn What Not to Learn: Action Elimination with Deep Reinforcement Learning},
+	abstract = {Learning how to act when there are many available actions in each state is a challenging task for Reinforcement Learning ({RL}) agents, especially when many of the actions are redundant or irrelevant. In such cases, it is sometimes easier to learn which actions not to take. In this work, we propose the Action-Elimination Deep Q-Network ({AE}-{DQN}) architecture that combines a Deep {RL} algorithm with an Action Elimination Network ({AEN}) that eliminates sub-optimal actions. The {AEN} is trained to predict invalid actions, supervised by an external elimination signal provided by the environment. Simulations demonstrate a considerable speedup and added robustness over vanilla {DQN} in text-based games with over a thousand discrete actions.},
+	pages = {12},
+	author = {Zahavy, Tom and Haroush, Matan and Merlis, Nadav and Mankowitz, Daniel J and Mannor, Shie},
+	langid = {english},
+	file = {Zahavy et al. - Learn What Not to Learn Action Elimination with D.pdf:/home/marcus/Zotero/storage/VYEP4VBV/Zahavy et al. - Learn What Not to Learn Action Elimination with D.pdf:application/pdf;Zahavy et al. - Learn What Not to Learn Action Elimination with D.pdf:/home/marcus/Zotero/storage/HXCI4BW7/Zahavy et al. - Learn What Not to Learn Action Elimination with D.pdf:application/pdf}
+}
+
+@book{noauthor_autonomous_2016,
+	location = {New York, {NY}},
+	title = {Autonomous driving},
+	isbn = {978-3-662-48845-4},
+	publisher = {Springer Berlin Heidelberg},
+	date = {2016},
+	langid = {english},
+	file = {2016 - Autonomous driving.pdf:/home/marcus/Zotero/storage/UJ8L4LDW/2016 - Autonomous driving.pdf:application/pdf}
+}
+
+@article{bansal_forecasting_2017,
+	title = {Forecasting Americans’ long-term adoption of connected and autonomous vehicle technologies},
+	volume = {95},
+	issn = {09658564},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0965856415300628},
+	doi = {10.1016/j.tra.2016.10.013},
+	abstract = {Automobile manufacturers, transportation researchers, and policymakers are interested in knowing the future of connected and autonomous vehicles ({CAVs}). To this end, this study proposes a new simulation-based ﬂeet evolution framework to forecast Americans’ longterm (year 2015–2045) adoption levels of {CAV} technologies under eight different scenarios based on 5\% and 10\% annual drops in technology prices; 0\%, 5\%, and 10\% annual increments in Americans’ willingness to pay ({WTP}); and changes in government regulations (e.g., mandatory adoption of connectivity on new vehicles). This simulation was calibrated with data obtained from a survey of 2167 Americans, regarding their preferences for {CAV} technologies (e.g., {WTP}) and their household’s annual vehicle transaction decisions.},
+	pages = {49--63},
+	journaltitle = {Transportation Research Part A: Policy and Practice},
+	shortjournal = {Transportation Research Part A: Policy and Practice},
+	author = {Bansal, Prateek and Kockelman, Kara M.},
+	urldate = {2020-02-07},
+	date = {2017-01},
+	langid = {english},
+	file = {Bansal and Kockelman - 2017 - Forecasting Americans’ long-term adoption of conne.pdf:/home/marcus/Zotero/storage/5SWX2TTW/Bansal and Kockelman - 2017 - Forecasting Americans’ long-term adoption of conne.pdf:application/pdf}
+}
+
+@article{tan_minudletip-aengdeennttrvesincfoorocpemereantitvle_nodate,
+	title = {{MInudletip}-{AengdeennttRvesi}.{nCfoorocpemereantitvLe} {eAargneinntgs}:},
+	abstract = {Intelligent human agents exist in a cooperative social environment that facilitates learning. They learn not only by trialand-error, but also through cooperation by sharing instantaneous information, episodic experience, and learned knowledge. The key investigations of this paper are, {\textbackslash}Given the same number of reinforcement learning agents, will cooperative agents outperform independent agents who do not communicate during learning?" and {\textbackslash}What is the price for such cooperation?" Using independent agents as a benchmark, cooperative agents are studied in following ways: (1) sharing sensation, (2) sharing episodes, and (3) sharing learned policies. This paper shows that (a) additional sensation from another agent is bene cial if it can be used e ciently, (b) sharing learned policies or episodes among agents speeds up learning at the cost of communication, and (c) for joint tasks, agents engaging in partnership can signi cantly outperform independent agents although they may learn slowly in the beginning. These tradeo s are not just limited to multi-agent reinforcement learning.},
+	pages = {8},
+	author = {Tan, Ming},
+	langid = {english},
+	file = {Tan - MInudletip-AengdeennttRvesi.nCfoorocpemereantitvLe.pdf:/home/marcus/Zotero/storage/TG5VK9JY/Tan - MInudletip-AengdeennttRvesi.nCfoorocpemereantitvLe.pdf:application/pdf;Tan - MInudletip-AengdeennttRvesi.nCfoorocpemereantitvLe.pdf:/home/marcus/Zotero/storage/DZDVYS96/Tan - MInudletip-AengdeennttRvesi.nCfoorocpemereantitvLe.pdf:application/pdf}
+}
+
+@article{wu_learn_2018,
+	title = {Learn to Steer through Deep Reinforcement Learning},
+	volume = {18},
+	issn = {1424-8220},
+	url = {http://www.mdpi.com/1424-8220/18/11/3650},
+	doi = {10.3390/s18113650},
+	abstract = {It is crucial for robots to autonomously steer in complex environments safely without colliding with any obstacles. Compared to conventional methods, deep reinforcement learning-based methods are able to learn from past experiences automatically and enhance the generalization capability to cope with unseen circumstances. Therefore, we propose an end-to-end deep reinforcement learning algorithm in this paper to improve the performance of autonomous steering in complex environments. By embedding a branching noisy dueling architecture, the proposed model is capable of deriving steering commands directly from raw depth images with high efﬁciency. Speciﬁcally, our learning-based approach extracts the feature representation from depth inputs through convolutional neural networks and maps it to both linear and angular velocity commands simultaneously through different streams of the network. Moreover, the training framework is also meticulously designed to improve the learning efﬁciency and effectiveness. It is worth noting that the developed system is readily transferable from virtual training scenarios to real-world deployment without any ﬁne-tuning by utilizing depth images. The proposed method is evaluated and compared with a series of baseline methods in various virtual environments. Experimental results demonstrate the superiority of the proposed model in terms of average reward, learning efﬁciency, success rate as well as computational time. Moreover, a variety of real-world experiments are also conducted which reveal the high adaptability of our model to both static and dynamic obstacle-cluttered environments.},
+	pages = {3650},
+	number = {11},
+	journaltitle = {Sensors},
+	shortjournal = {Sensors},
+	author = {Wu, Keyu and Esfahani, Mahdi and Yuan, Shenghai and Wang, Han},
+	urldate = {2020-02-07},
+	date = {2018-10-27},
+	langid = {english},
+	file = {Wu et al. - 2018 - Learn to Steer through Deep Reinforcement Learning.pdf:/home/marcus/Zotero/storage/DBP67P52/Wu et al. - 2018 - Learn to Steer through Deep Reinforcement Learning.pdf:application/pdf}
+}
+
+@article{ibarra_angrier_2016,
+	title = {Angrier Birds: Bayesian reinforcement learning},
+	url = {http://arxiv.org/abs/1601.01297},
+	shorttitle = {Angrier Birds},
+	abstract = {We train a reinforcement learner to play a simpliﬁed version of the game Angry Birds. The learner is provided with a game state in a manner similar to the output that could be produced by computer vision algorithms. We improve on the efﬁciency of regular ε-greedy Q-Learning with linear function approximation through more systematic exploration in Randomized Least Squares Value Iteration ({RLSVI}), an algorithm that samples its policy from a posterior distribution on optimal policies. With larger state-action spaces, efﬁcient exploration becomes increasingly important, as evidenced by the faster learning in {RLSVI}.},
+	journaltitle = {{arXiv}:1601.01297 [cs]},
+	author = {Ibarra, Imanol Arrieta and Ramos, Bernardo and Roemheld, Lars},
+	urldate = {2020-02-07},
+	date = {2016-01-06},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1601.01297},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	file = {Ibarra et al. - 2016 - Angrier Birds Bayesian reinforcement learning.pdf:/home/marcus/Zotero/storage/6AAEMLF2/Ibarra et al. - 2016 - Angrier Birds Bayesian reinforcement learning.pdf:application/pdf}
+}
+
+@article{kraemer_multi-agent_2016,
+	title = {Multi-agent reinforcement learning as a rehearsal for decentralized planning},
+	volume = {190},
+	issn = {09252312},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S0925231216000783},
+	doi = {10.1016/j.neucom.2016.01.031},
+	abstract = {Decentralized partially observable Markov decision processes (Dec-{POMDPs}) are a powerful tool for modeling multi-agent planning and decision-making under uncertainty. Prevalent Dec-{POMDP} solution techniques require centralized computation given full knowledge of the underlying model. Multi-agent reinforcement learning ({MARL}) based approaches have been recently proposed for distributed solution of Dec-{POMDPs} without full prior knowledge of the model, but these methods assume that conditions during learning and policy execution are identical. In some practical scenarios this may not be the case. We propose a novel {MARL} approach in which agents are allowed to rehearse with information that will not be available during policy execution. The key is for the agents to learn policies that do not explicitly rely on these rehearsal features. We also establish a weak convergence result for our algorithm, {RLaR}, demonstrating that {RLaR} converges in probability when certain conditions are met. We show experimentally that incorporating rehearsal features can enhance the learning rate compared to non-rehearsalbased learners, and demonstrate fast, (near) optimal performance on many existing benchmark {DecPOMDP} problems. We also compare {RLaR} against an existing approximate Dec-{POMDP} solver which, like {RLaR}, does not assume a priori knowledge of the model. While {RLaR}'s policy representation is not as scalable, we show that {RLaR} produces higher quality policies for most problems and horizons studied.},
+	pages = {82--94},
+	journaltitle = {Neurocomputing},
+	shortjournal = {Neurocomputing},
+	author = {Kraemer, Landon and Banerjee, Bikramjit},
+	urldate = {2020-02-07},
+	date = {2016-05},
+	langid = {english},
+	file = {Kraemer and Banerjee - 2016 - Multi-agent reinforcement learning as a rehearsal .pdf:/home/marcus/Zotero/storage/8GRPGVGK/Kraemer and Banerjee - 2016 - Multi-agent reinforcement learning as a rehearsal .pdf:application/pdf}
+}
+
+@article{mnih_asynchronous_2016,
+	title = {Asynchronous Methods for Deep Reinforcement Learning},
+	url = {http://arxiv.org/abs/1602.01783},
+	abstract = {We propose a conceptually simple and lightweight framework for deep reinforcement learning that uses asynchronous gradient descent for optimization of deep neural network controllers. We present asynchronous variants of four standard reinforcement learning algorithms and show that parallel actor-learners have a stabilizing effect on training allowing all four methods to successfully train neural network controllers. The best performing method, an asynchronous variant of actor-critic, surpasses the current state-of-the-art on the Atari domain while training for half the time on a single multi-core {CPU} instead of a {GPU}. Furthermore, we show that asynchronous actor-critic succeeds on a wide variety of continuous motor control problems as well as on a new task of navigating random 3D mazes using a visual input.},
+	journaltitle = {{arXiv}:1602.01783 [cs]},
+	author = {Mnih, Volodymyr and Badia, Adrià Puigdomènech and Mirza, Mehdi and Graves, Alex and Lillicrap, Timothy P. and Harley, Tim and Silver, David and Kavukcuoglu, Koray},
+	urldate = {2020-02-07},
+	date = {2016-06-16},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1602.01783},
+	keywords = {Computer Science - Machine Learning},
+	file = {Mnih et al. - 2016 - Asynchronous Methods for Deep Reinforcement Learni.pdf:/home/marcus/Zotero/storage/2YH6IP7K/Mnih et al. - 2016 - Asynchronous Methods for Deep Reinforcement Learni.pdf:application/pdf}
+}
+
+@article{schulman_proximal_2017,
+	title = {Proximal Policy Optimization Algorithms},
+	url = {http://arxiv.org/abs/1707.06347},
+	abstract = {We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a “surrogate” objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization ({PPO}), have some of the beneﬁts of trust region policy optimization ({TRPO}), but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test {PPO} on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that {PPO} outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time.},
+	journaltitle = {{arXiv}:1707.06347 [cs]},
+	author = {Schulman, John and Wolski, Filip and Dhariwal, Prafulla and Radford, Alec and Klimov, Oleg},
+	urldate = {2020-02-07},
+	date = {2017-08-28},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1707.06347},
+	keywords = {Computer Science - Machine Learning},
+	file = {Schulman et al. - 2017 - Proximal Policy Optimization Algorithms.pdf:/home/marcus/Zotero/storage/PCEQGSSW/Schulman et al. - 2017 - Proximal Policy Optimization Algorithms.pdf:application/pdf}
+}
+
+@article{dabney_implicit_2018,
+	title = {Implicit Quantile Networks for Distributional Reinforcement Learning},
+	url = {http://arxiv.org/abs/1806.06923},
+	abstract = {In this work, we build on recent advances in distributional reinforcement learning to give a generally applicable, ﬂexible, and state-of-the-art distributional variant of {DQN}. We achieve this by using quantile regression to approximate the full quantile function for the state-action return distribution. By reparameterizing a distribution over the sample space, this yields an implicitly deﬁned return distribution and gives rise to a large class of risk-sensitive policies. We demonstrate improved performance on the 57 Atari 2600 games in the {ALE}, and use our algorithm’s implicitly deﬁned distributions to study the effects of risk-sensitive policies in Atari games.},
+	journaltitle = {{arXiv}:1806.06923 [cs, stat]},
+	author = {Dabney, Will and Ostrovski, Georg and Silver, David and Munos, Rémi},
+	urldate = {2020-02-07},
+	date = {2018-06-14},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1806.06923},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Dabney et al. - 2018 - Implicit Quantile Networks for Distributional Rein.pdf:/home/marcus/Zotero/storage/Q9JTRYSB/Dabney et al. - 2018 - Implicit Quantile Networks for Distributional Rein.pdf:application/pdf}
+}
+
+@article{nachum_near-optimal_2019,
+	title = {Near-Optimal Representation Learning for Hierarchical Reinforcement Learning},
+	url = {http://arxiv.org/abs/1810.01257},
+	abstract = {We study the problem of representation learning in goal-conditioned hierarchical reinforcement learning. In such hierarchical structures, a higher-level controller solves tasks by iteratively communicating goals which a lower-level policy is trained to reach. Accordingly, the choice of representation -- the mapping of observation space to goal space -- is crucial. To study this problem, we develop a notion of sub-optimality of a representation, defined in terms of expected reward of the optimal hierarchical policy using this representation. We derive expressions which bound the sub-optimality and show how these expressions can be translated to representation learning objectives which may be optimized in practice. Results on a number of difficult continuous-control tasks show that our approach to representation learning yields qualitatively better representations as well as quantitatively better hierarchical policies, compared to existing methods (see videos at https://sites.google.com/view/representation-hrl).},
+	journaltitle = {{arXiv}:1810.01257 [cs]},
+	author = {Nachum, Ofir and Gu, Shixiang and Lee, Honglak and Levine, Sergey},
+	urldate = {2020-02-07},
+	date = {2019-01-09},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1810.01257},
+	keywords = {Computer Science - Artificial Intelligence},
+	file = {Nachum et al. - 2019 - Near-Optimal Representation Learning for Hierarchi.pdf:/home/marcus/Zotero/storage/YDBSFMBP/Nachum et al. - 2019 - Near-Optimal Representation Learning for Hierarchi.pdf:application/pdf}
+}
+
+@article{brockman_openai_2016,
+	title = {{OpenAI} Gym},
+	url = {http://arxiv.org/abs/1606.01540},
+	abstract = {{OpenAI} Gym1 is a toolkit for reinforcement learning research. It includes a growing collection of benchmark problems that expose a common interface, and a website where people can share their results and compare the performance of algorithms. This whitepaper discusses the components of {OpenAI} Gym and the design decisions that went into the software.},
+	journaltitle = {{arXiv}:1606.01540 [cs]},
+	author = {Brockman, Greg and Cheung, Vicki and Pettersson, Ludwig and Schneider, Jonas and Schulman, John and Tang, Jie and Zaremba, Wojciech},
+	urldate = {2020-02-07},
+	date = {2016-06-05},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1606.01540},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	file = {Brockman et al. - 2016 - OpenAI Gym.pdf:/home/marcus/Zotero/storage/CEC4IQ5W/Brockman et al. - 2016 - OpenAI Gym.pdf:application/pdf}
+}
+
+@article{botvinick_reinforcement_2019,
+	title = {Reinforcement Learning, Fast and Slow},
+	volume = {23},
+	issn = {13646613},
+	url = {https://linkinghub.elsevier.com/retrieve/pii/S1364661319300610},
+	doi = {10.1016/j.tics.2019.02.006},
+	pages = {408--422},
+	number = {5},
+	journaltitle = {Trends in Cognitive Sciences},
+	shortjournal = {Trends in Cognitive Sciences},
+	author = {Botvinick, Matthew and Ritter, Sam and Wang, Jane X. and Kurth-Nelson, Zeb and Blundell, Charles and Hassabis, Demis},
+	urldate = {2020-02-07},
+	date = {2019-05},
+	langid = {english},
+	file = {Botvinick et al. - 2019 - Reinforcement Learning, Fast and Slow.pdf:/home/marcus/Zotero/storage/9P7GICS2/Botvinick et al. - 2019 - Reinforcement Learning, Fast and Slow.pdf:application/pdf}
+}
+
+@article{burda_large-scale_2018,
+	title = {Large-Scale Study of Curiosity-Driven Learning},
+	url = {http://arxiv.org/abs/1808.04355},
+	abstract = {Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the ﬁrst large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the handdesigned extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufﬁcient for many popular {RL} game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups. Game-play videos and code are at https://pathak22.github. io/large-scale-curiosity/.},
+	journaltitle = {{arXiv}:1808.04355 [cs, stat]},
+	author = {Burda, Yuri and Edwards, Harri and Pathak, Deepak and Storkey, Amos and Darrell, Trevor and Efros, Alexei A.},
+	urldate = {2020-02-07},
+	date = {2018-08-13},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1808.04355},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Robotics, Computer Science - Computer Vision and Pattern Recognition},
+	file = {Burda et al. - 2018 - Large-Scale Study of Curiosity-Driven Learning.pdf:/home/marcus/Zotero/storage/PSXEPQ75/Burda et al. - 2018 - Large-Scale Study of Curiosity-Driven Learning.pdf:application/pdf}
+}
+
+@article{kaplanis_continual_2018,
+	title = {Continual Reinforcement Learning with Complex Synapses},
+	url = {http://arxiv.org/abs/1802.07239},
+	abstract = {Unlike humans, who are capable of continual learning over their lifetimes, artiﬁcial neural networks have long been known to suffer from a phenomenon known as catastrophic forgetting, whereby new learning can lead to abrupt erasure of previously acquired knowledge. Whereas in a neural network the parameters are typically modelled as scalar values, an individual synapse in the brain comprises a complex network of interacting biochemical components that evolve at different timescales. In this paper, we show that by equipping tabular and deep reinforcement learning agents with a synaptic model that incorporates this biological complexity (Benna \& Fusi, 2016), catastrophic forgetting can be mitigated at multiple timescales. In particular, we ﬁnd that as well as enabling continual learning across sequential training of two simple tasks, it can also be used to overcome within-task forgetting by reducing the need for an experience replay database.},
+	journaltitle = {{arXiv}:1802.07239 [cs]},
+	author = {Kaplanis, Christos and Shanahan, Murray and Clopath, Claudia},
+	urldate = {2020-02-07},
+	date = {2018-06-19},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1802.07239},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Computer Science - Neural and Evolutionary Computing},
+	file = {Kaplanis et al. - 2018 - Continual Reinforcement Learning with Complex Syna.pdf:/home/marcus/Zotero/storage/DY9LXHW6/Kaplanis et al. - 2018 - Continual Reinforcement Learning with Complex Syna.pdf:application/pdf}
+}
+
+@article{yu_deep_nodate,
+	title = {Deep Reinforcement Learning for Simulated Autonomous Vehicle Control},
+	abstract = {We investigate the use of Deep Q-Learning to control a simulated car via reinforcement learning. We start by implementing the approach of [5] ourselves, and then experimenting with various possible alterations to improve performance on our selected task. In particular, we experiment with various reward functions to induce speciﬁc driving behavior, double Q-learning, gradient update rules, and other hyperparameters.},
+	pages = {7},
+	author = {Yu, April and Palefsky-Smith, Raphael and Bedi, Rishi},
+	langid = {english},
+	file = {Yu et al. - Deep Reinforcement Learning for Simulated Autonomo.pdf:/home/marcus/Zotero/storage/X6NY2WLF/Yu et al. - Deep Reinforcement Learning for Simulated Autonomo.pdf:application/pdf}
+}
+
+@article{suarez_neural_2019,
+	title = {Neural {MMO}: A Massively Multiagent Game Environment for Training and Evaluating Intelligent Agents},
+	url = {http://arxiv.org/abs/1903.00784},
+	shorttitle = {Neural {MMO}},
+	abstract = {The emergence of complex life on Earth is often attributed to the arms race that ensued from a huge number of organisms all competing for ﬁnite resources. We present an artiﬁcial intelligence research environment, inspired by the human game genre of {MMORPGs} (Massively Multiplayer Online Role-Playing Games, a.k.a. {MMOs}), that aims to simulate this setting in microcosm. As with {MMORPGs} and the real world alike, our environment is persistent and supports a large and variable number of agents. Our environment is well suited to the study of large-scale multiagent interaction: it requires that agents learn robust combat and navigation policies in the presence of large populations attempting to do the same. Baseline experiments reveal that population size magniﬁes and incentivizes the development of skillful behaviors and results in agents that outcompete agents trained in smaller populations. We further show that the policies of agents with unshared weights naturally diverge to ﬁll different niches in order to avoid competition.},
+	journaltitle = {{arXiv}:1903.00784 [cs, stat]},
+	author = {Suarez, Joseph and Du, Yilun and Isola, Phillip and Mordatch, Igor},
+	urldate = {2020-02-07},
+	date = {2019-03-02},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1903.00784},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Multiagent Systems},
+	file = {Suarez et al. - 2019 - Neural MMO A Massively Multiagent Game Environmen.pdf:/home/marcus/Zotero/storage/WXYHD776/Suarez et al. - 2019 - Neural MMO A Massively Multiagent Game Environmen.pdf:application/pdf}
+}
+
+@article{cobbe_quantifying_2019,
+	title = {Quantifying Generalization in Reinforcement Learning},
+	url = {http://arxiv.org/abs/1812.02341},
+	abstract = {In this paper, we investigate the problem of overﬁtting in deep reinforcement learning. Among the most common benchmarks in {RL}, it is customary to use the same environments for both training and testing. This practice offers relatively little insight into an agent’s ability to generalize. We address this issue by using procedurally generated environments to construct distinct training and test sets. Most notably, we introduce a new environment called {CoinRun}, designed as a benchmark for generalization in {RL}. Using {CoinRun}, we ﬁnd that agents overﬁt to surprisingly large training sets. We then show that deeper convolutional architectures improve generalization, as do methods traditionally found in supervised learning, including L2 regularization, dropout, data augmentation and batch normalization.},
+	journaltitle = {{arXiv}:1812.02341 [cs, stat]},
+	author = {Cobbe, Karl and Klimov, Oleg and Hesse, Chris and Kim, Taehoon and Schulman, John},
+	urldate = {2020-02-07},
+	date = {2019-07-14},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1812.02341},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Cobbe et al. - 2019 - Quantifying Generalization in Reinforcement Learni.pdf:/home/marcus/Zotero/storage/DN523RY4/Cobbe et al. - 2019 - Quantifying Generalization in Reinforcement Learni.pdf:application/pdf}
+}
+
+@article{mordatch_concept_2018,
+	title = {Concept Learning with Energy-Based Models},
+	url = {http://arxiv.org/abs/1811.02486},
+	abstract = {Many hallmarks of human intelligence, such as generalizing from limited experience, abstract reasoning and planning, analogical reasoning, creative problem solving, and capacity for language require the ability to consolidate experience into concepts, which act as basic building blocks of understanding and reasoning. We present a framework that defines a concept by an energy function over events in the environment, as well as an attention mask over entities participating in the event. Given few demonstration events, our method uses inference-time optimization procedure to generate events involving similar concepts or identify entities involved in the concept. We evaluate our framework on learning visual, quantitative, relational, temporal concepts from demonstration events in an unsupervised manner. Our approach is able to successfully generate and identify concepts in a few-shot setting and resulting learned concepts can be reused across environments. Example videos of our results are available at sites.google.com/site/energyconceptmodels},
+	journaltitle = {{arXiv}:1811.02486 [cs]},
+	author = {Mordatch, Igor},
+	urldate = {2020-02-07},
+	date = {2018-11-06},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1811.02486},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	file = {Mordatch - 2018 - Concept Learning with Energy-Based Models.pdf:/home/marcus/Zotero/storage/9CC3Q837/Mordatch - 2018 - Concept Learning with Energy-Based Models.pdf:application/pdf}
+}
+
+@article{schrittwieser_mastering_2019,
+	title = {Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model},
+	url = {http://arxiv.org/abs/1911.08265},
+	abstract = {Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artiﬁcial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the {MuZero} algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. {MuZero} learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the actionselection policy, and the value function. When evaluated on 57 different Atari games - the canonical video game environment for testing {AI} techniques, in which model-based planning approaches have historically struggled our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, {MuZero} matched the superhuman performance of the {AlphaZero} algorithm that was supplied with the game rules.},
+	journaltitle = {{arXiv}:1911.08265 [cs, stat]},
+	author = {Schrittwieser, Julian and Antonoglou, Ioannis and Hubert, Thomas and Simonyan, Karen and Sifre, Laurent and Schmitt, Simon and Guez, Arthur and Lockhart, Edward and Hassabis, Demis and Graepel, Thore and Lillicrap, Timothy and Silver, David},
+	urldate = {2020-02-07},
+	date = {2019-11-19},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1911.08265},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Schrittwieser et al. - 2019 - Mastering Atari, Go, Chess and Shogi by Planning w.pdf:/home/marcus/Zotero/storage/MY5W3WLP/Schrittwieser et al. - 2019 - Mastering Atari, Go, Chess and Shogi by Planning w.pdf:application/pdf}
+}
+
+@article{lowrey_plan_2019,
+	title = {Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control},
+	url = {http://arxiv.org/abs/1811.01848},
+	shorttitle = {Plan Online, Learn Offline},
+	abstract = {We propose a “plan online and learn ofﬂine” framework for the setting where an agent, with an internal model, needs to continually act and learn in the world. Our work builds on the synergistic relationship between local model-based control, global value function learning, and exploration. We study how local trajectory optimization can cope with approximation errors in the value function, and can stabilize and accelerate value function learning. Conversely, we also study how approximate value functions can help reduce the planning horizon and allow for better policies beyond local solutions. Finally, we also demonstrate how trajectory optimization can be used to perform temporally coordinated exploration in conjunction with estimating uncertainty in value function approximation. This exploration is critical for fast and stable learning of the value function. Combining these components enable solutions to complex control tasks, like humanoid locomotion and dexterous in-hand manipulation, in the equivalent of a few minutes of experience in the real world.},
+	journaltitle = {{arXiv}:1811.01848 [cs, stat]},
+	author = {Lowrey, Kendall and Rajeswaran, Aravind and Kakade, Sham and Todorov, Emanuel and Mordatch, Igor},
+	urldate = {2020-02-07},
+	date = {2019-01-28},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1811.01848},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Computer Science - Robotics},
+	file = {Lowrey et al. - 2019 - Plan Online, Learn Offline Efficient Learning and.pdf:/home/marcus/Zotero/storage/G267SCKC/Lowrey et al. - 2019 - Plan Online, Learn Offline Efficient Learning and.pdf:application/pdf}
+}
+
+@article{lattimore_learning_2019,
+	title = {Learning with Good Feature Representations in Bandits and in {RL} with a Generative Model},
+	url = {http://arxiv.org/abs/1911.07676},
+	abstract = {The construction in the recent paper by Du et al. [2019] implies that searching for a near-optimal action in a bandit sometimes requires examining essentially all the actions, even if the learner is given linear features in \${\textbackslash}mathbb R{\textasciicircum}d\$ that approximate the rewards with a small uniform error. In this note we use the Kiefer-Wolfowitz theorem to show that by checking only a few actions, a learner can always find an action which is suboptimal with an error of at most \$O({\textbackslash}varepsilon {\textbackslash}sqrt\{d\})\$ where \${\textbackslash}varepsilon\$ is the approximation error of the features. Thus, features are useful when the approximation error is small relative to the dimensionality of the features. The idea is applied to stochastic bandits and reinforcement learning with a generative model where the learner has access to \$d\$-dimensional linear features that approximate the action-value functions for all policies to an accuracy of \${\textbackslash}varepsilon\$. For bandits we prove a bound on the regret of order \${\textbackslash}sqrt\{dn {\textbackslash}log(k)\} + {\textbackslash}varepsilon n {\textbackslash}sqrt\{d\} {\textbackslash}log(n)\$ with \$k\$ the number of actions and \$n\$ the horizon. For {RL} we show that approximate policy iteration can learn a policy that is optimal up to an additive error of order \${\textbackslash}varepsilon {\textbackslash}sqrt\{d\} / (1 - {\textbackslash}gamma){\textasciicircum}2\$ and using about \$d / ({\textbackslash}varepsilon{\textasciicircum}2(1-{\textbackslash}gamma){\textasciicircum}4)\$ samples from the generative model.},
+	journaltitle = {{arXiv}:1911.07676 [cs, stat]},
+	author = {Lattimore, Tor and Szepesvari, Csaba},
+	urldate = {2020-02-07},
+	date = {2019-11-18},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1911.07676},
+	keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Lattimore and Szepesvari - 2019 - Learning with Good Feature Representations in Band.pdf:/home/marcus/Zotero/storage/JUNZQJNL/Lattimore and Szepesvari - 2019 - Learning with Good Feature Representations in Band.pdf:application/pdf}
+}
+
+@article{vitelli_carma_nodate,
+	title = {{CARMA}: A Deep Reinforcement Learning Approach to Autonomous Driving},
+	abstract = {We created a deep Q-network ({DQN}) agent to perform the task of autonomous car driving from raw sensory inputs. We evaluated our agent’s performance against several standard agents in a racing simulation environment. Our results indicate that our {DQN} agent is capable of successfully controlling a car to navigate around a simulation environment.},
+	pages = {8},
+	author = {Vitelli, Matt and Nayebi, Aran},
+	langid = {english},
+	file = {Vitelli and Nayebi - CARMA A Deep Reinforcement Learning Approach to A.pdf:/home/marcus/Zotero/storage/DTQZH6F7/Vitelli and Nayebi - CARMA A Deep Reinforcement Learning Approach to A.pdf:application/pdf}
+}
+
+@article{burda_exploration_2018,
+	title = {Exploration by Random Network Distillation},
+	url = {http://arxiv.org/abs/1810.12894},
+	abstract = {We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a ﬁxed randomly initialized neural network. We also introduce a method to ﬂexibly combine intrinsic and extrinsic rewards. We ﬁnd that the random network distillation ({RND}) bonus combined with this increased ﬂexibility enables signiﬁcant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma’s Revenge, a game famously difﬁcult for deep reinforcement learning methods. To the best of our knowledge, this is the ﬁrst method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the ﬁrst level.},
+	journaltitle = {{arXiv}:1810.12894 [cs, stat]},
+	author = {Burda, Yuri and Edwards, Harrison and Storkey, Amos and Klimov, Oleg},
+	urldate = {2020-02-07},
+	date = {2018-10-30},
+	langid = {english},
+	eprinttype = {arxiv},
+	eprint = {1810.12894},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning},
+	file = {Burda et al. - 2018 - Exploration by Random Network Distillation.pdf:/home/marcus/Zotero/storage/BAQYT35C/Burda et al. - 2018 - Exploration by Random Network Distillation.pdf:application/pdf}
+}

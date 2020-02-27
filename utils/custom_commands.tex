@@ -1,0 +1,14 @@
+% Set fonts for the document
+\setmainfont
+     [ BoldFont       = texgyrepagella-bold.otf ,
+       ItalicFont     = texgyrepagella-italic.otf ,
+       BoldItalicFont = texgyrepagella-bolditalic.otf ]
+     {texgyrepagella-regular.otf}
+\setsansfont{Arial}
+
+% Format the chapter strings
+\titleformat{\chapter}{\normalfont\sffamily\bfseries\color{black}\fontsize{22}{0}\selectfont}{{\thechapter}}{22pt}{}\titlespacing*{\chapter}{0pt}{-12pt}{4pt}
+\titleformat{\section}{\normalfont\sffamily\bfseries\color{black}\fontsize{14}{0}\selectfont}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\sffamily\bfseries\color{black}\fontsize{14}{0}\selectfont}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\sffamily\bfseries\color{black}\fontsize{14}{0}\selectfont}{\thesubsection}{1em}{}
+\renewcommand{\baselinestretch}{1.2}

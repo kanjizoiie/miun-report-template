@@ -1,0 +1,18 @@
+% LEFT HEADER
+\renewcommand{\topleft}{R\reporttitle - \reportsubtitle \\ \author}
+
+% RIGHT HEADER
+\renewcommand{\topright}{\today}
+
+
+% Setup headers for the pages
+\fancypagestyle{plain}{%
+    \fancyhead[R]{\topright}
+    \fancyhead[L]{\topleft}
+    \fancyfoot[C]{\thepage}
+}
+
+\fancyhead[R]{\topright}
+\fancyhead[L]{\topleft}
+\fancyfoot[C]{\thepage}
+

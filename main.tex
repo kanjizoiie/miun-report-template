@@ -1,0 +1,97 @@
+\documentclass[12pt]{report}
+\usepackage{blindtext}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{geometry}
+\usepackage[titletoc]{appendix}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage[yyyymmdd]{datetime}
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{newpxtext,newpxmath}
+\usepackage[T1]{fontenc}
+\usepackage{tabularx}
+\usepackage{fontspec}
+\usepackage{tgpagella}
+\usepackage[nottoc]{tocbibind}
+\usepackage{titlesec}
+\usepackage{anyfontsize}
+\usepackage[hang]{footmisc}
+
+% Setup margin for the footnote numbering
+\setlength{\footnotemargin}{1em}
+
+% This implementation uses lots of libraries and thus takes a good while to compile...
+% For fonts to work you will need to use the XeLaTeX compiler.
+
+
+% Set the standard pagestyle to use fancyheaders
+
+\pagestyle{fancy}
+
+% Setup theorem package for examples
+\newtheorem{example}{Example}[section]
+
+% Define miun yellow color for the box
+\definecolor{miunYellow}{RGB}{245, 213, 23}
+
+% Create yellow background box
+\tcbset{width=\textwidth,boxrule=0pt,colback=miunYellow,arc=0pt,auto outer arc,left=0pt,right=0pt,boxsep=5pt}
+
+% Change the TOC title
+\renewcommand*\contentsname{Table of Contents}
+% Change the bibliography title
+\renewcommand\bibname{References}
+
+% Set standard date separator
+\renewcommand{\dateseparator}{-}
+
+% Define headers
+
+% Set how many section layers we will show in the TOC
+\setcounter{tocdepth}{2}
+
+% Set how many section layers that will have numbering
+% With 3, /section, /subsection and /subsubsection should have numbering.
+\setcounter{secnumdepth}{3}
+
+% Setup footnotes can be set to different numbering schemes.
+% See https://www.overleaf.com/learn/latex/Page_numbering#Numbering_styles for examples for numbering styles.
+\renewcommand{\thefootnote}{\arabic{footnote}}
+ 
+%! THESE SHOULD BE CHANGED
+
+% RIGHT HEADER
+\renewcommand{\reporttitle}{Reinforcement Learning}
+
+% RIGHT HEADER
+\renewcommand{\reportsubtitle}{The road ahead for safe autonomous vehicles}
+
+% RIGHT HEADER
+\renewcommand{\author}{Marcus Johansson}
+
+%!
+
+\begin{document}
+    \include{utils/custom_commands}
+    \include{chapters/title}
+    \include{utils/custom_header}
+    \include{chapters/department}
+    \pagenumbering{roman}
+    \include{chapters/preamble}
+    \pagenumbering{arabic}
+    \include{chapters/introduction}
+    \include{chapters/theory}
+    \include{chapters/method}
+    \include{chapters/construction}
+    \include{chapters/results}
+    \include{chapters/discussion}
+    \include{chapters/references}
+    \appendix
+    \include{chapters/appendixes/appendix_A}
+    \include{chapters/appendixes/appendix_B}
+\end{document}

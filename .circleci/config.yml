@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: thomasweise/docker-texlive-full
+    steps:
+      - checkout
+      - run: 'make build'
+      - store_artifacts:
+          path: output/
+          destination: output
